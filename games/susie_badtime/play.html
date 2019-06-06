@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Susie 的坏时光 - Mr_Xiao_M</title>
+	<link rel="manifest" href="appmanifest.json" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" href="loading-logo.png" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+	 	<style type="text/css">
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+			position: absolute;
+			top: 65px;
+			left: 40px;
+			width: 640px;
+			height:480px;
+			float: left;
+		    border:3px solid #489ED0;
+		}
+		#c2text{
+			position: absolute;
+			top: 40px;
+			left: 40px;
+			text-align: left;
+			color: #FFF;
+			background: #000;
+		}
+    </style>
+	<meta name="HandheldFriendly" content="true" />
+	
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" href="loading-logo.png" />
+</head>
+<body> 
+	<div id="fb-root"></div>
+	<div id="c2canvasdiv" style="float:left">
+	    <h2 id="c2text">[UNDERTALE X DELTARUNE] Susie 的坏时光<br/>&nbsp;</h2>
+		<canvas id="c2canvas" width="640" height="480">
+			你的浏览器可能不支持HTML5，这会让网页的某些功能无法使用 <br/>
+			请更换支持HTML5的主流浏览器，如Google Chrome、FireFox等
+		</canvas>
+	</div>
+	<div style="position: absolute; top: 40px; left: 700px; float: left; width: 500px; background: rgba(0,0,0,0.5)">
+	<font size="4" color="#F75353">❤ 游戏帮助 :<br/></font>
+	<font size="3" color="#FFF">
+	    ↑↓←→键控制你的灵魂移动或选择选项 <br/>
+	    按Z来确定你的选择，攻击时需要按Z来调节攻击条来确定攻击的强度<br/>
+		在菜单时，按X来取消你的选择或回到上级菜单<br/>
+		尽量躲避敌人的攻击，当HP为0时，你就失败了<br/>
+		如果HP值旁边有KR标识，受伤时则按帧来扣除HP，也就是<br/>
+		如果你的灵魂一直碰着敌人的弹幕将会持续扣除HP，离开弹幕<br/>
+		黄色血条将停止扣除，但紫色的血条会继续扣除致没有，<br/>
+		HP为1时如果有紫色血条将不会扣除黄色血条，反之HP为1时受伤<br/>
+		如果没有紫色血条将游戏结束<br/>
+		不同颜色的灵魂拥有不同的性质，目前战斗中有以下两种<br/>
+		&nbsp;&nbsp;红色 - 可以随意移动<br/>
+		&nbsp;&nbsp;蓝色 - 受重力控制，长按某方向键可跳跃(要看灵魂的重力往哪边)<br/>
+		<br/>
+		游戏帮助就这么多，祝你有一段愉快的时光<br/><br/>
+	</font>
+	<p></p>
+	</div>
+		<footer id="footer">
+		    <span id="footer_text"> Loading... </span>
+		</footer>
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="c2runtime.js"></script>
+    <script>
+	    $(function () {
+	        if(new Date().getFullYear() != "2019") {
+		        $("#footer_text").html("&copy; 2019-" + new Date().getFullYear() + " <a href=\"https://mrxiaom.natfrp.cn/\" >Mr_Xiao_M</a> | 自豪地使用 <a href=\"https://www.natfrp.org/\" target=\"_blank\">Sakura Page</a>");
+            }else{
+	            $("#footer_text").html("&copy; " + new Date().getFullYear() + " <a href=\"https://mrxiaom.natfrp.cn/\"\">Mr_Xiao_M</a> | 自豪地使用 <a href=\"https://www.natfrp.org/\" target=\"_blank\">Sakura Page</a>");
+	        }
+        })
+		jQuery(document).ready(function ()
+		{
+			cr_createRuntime("c2canvas");
+		});
+		
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		function OnRegisterSWError(e)
+		{
+			console.warn("Failed to register service worker: ", e);
+		};
+		
+		window.C2_RegisterSW = function C2_RegisterSW()
+		{
+			if (!navigator.serviceWorker)
+				return;
+			
+			try {
+				navigator.serviceWorker.register("sw.js", { scope: "./" })
+				.then(function (reg)
+				{
+					console.log("Registered service worker on " + reg.scope);
+				})
+				.catch(OnRegisterSWError);
+			}
+			catch (e)
+			{
+				OnRegisterSWError(e);
+			}
+		};
+	</script>
+</body>
+</html>
