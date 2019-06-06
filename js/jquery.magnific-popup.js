@@ -2039,9 +2039,9 @@ $.magnificPopup.registerModule(RETINA_NS, {
 })();
 $(function () {
 	if(new Date().getFullYear() != "2019") {
-		$("#footer_text").html("&copy; 2019-" + new Date().getFullYear() + " <a href=\"https://mrxiaom.natfrp.cn/\" >Mr_Xiao_M</a> | 自豪地使用 <a href=\"https://www.natfrp.org/\" target=\"_blank\">Sakura Page</a>");
+		$("#footer_text").html("&copy; 2019-" + new Date().getFullYear() + " <a href=\"https://mcxiaom.github.io/\" >Mr_Xiao_M</a>");
     }else{
-	    $("#footer_text").html("&copy; " + new Date().getFullYear() + " <a href=\"https://mrxiaom.natfrp.cn/\" >Mr_Xiao_M</a> | 自豪地使用 <a href=\"https://www.natfrp.org/\" target=\"_blank\">Sakura Page</a>");
+	    $("#footer_text").html("&copy; " + new Date().getFullYear() + " <a href=\"https://mcxiaom.github.cn/\" >Mr_Xiao_M</a>");
 	}
 })
 /*>>fastclick*/
