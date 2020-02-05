@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>蓝色实验体: 终章 - Mr_Xiao_M</title>
+		<link rel="icon" href="tsc.png"/>
+		<style>
+			body{
+				background: #000;
+			}
+			a{
+				color:#0FF
+			} 
+			a:hover{
+				color:#0BB
+			}
+			.game{
+				margin: 0 auto;
+				width: 550px;
+				height: 622px;
+				border-radius:5px;
+				border:2px solid #666;
+				background: #000;
+			}
+			.game_area{
+				position: absolute;
+				top:80px;
+				margin-left: 0px;
+				width: 550px;
+				height: 550px;
+				border-radius:5px;
+				background: #000;
+			}
+			.game_area > iframe{
+				z-index: 1;
+				border-radius:5px;
+				border-top:2px solid #666;
+			}
+			body > div > div.info{
+				position: absolute;
+				width: 550px;
+				height:70px;
+				padding:3px;
+			}
+			body > div > div.info > div.text{
+				color: #fff;
+				position: absolute;
+				left: 75px;
+				top: 5px;
+				width: 450px;
+				height:70px;
+			}
+			body > div > div.info > div > p , body > div > div.info > div > h4{
+				margin-top:5px;
+				margin-bottom:0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="game">
+			<div class="info">
+				<img src="tsc.png" width="64px" height="64px"/>
+				<div class="text">
+				<h4>蓝色实验体: 终章 (Test Subject Complete) <a href="http://www.nitrome.com/games/testsubjectcomplete/" target="_blank">原链接</a></h4>
+				<p>* <a href="http://www.nitrome.com/" target="_blank">nitrome</a> 出品</p>
+				</div>
+			</div>
+			<div class="game_area">
+				<p id="loading" style="z-index:-1">正在载入游戏文件…</p>
+				<iframe frameborder=0 height="550px" width="550px" src="http://www.nitrome.com/games/preloader_frame_2.5.4.php?game_id=227&game_reference_id=testsubjectcomplete&game_name=Test%20Subject%20Complete&game_height=550&game_width=550&game_arcade=1&game_action=1&game_puzzle=1&game_version=10.0.0.0&game_type=flash&google=1"></iframe>
+				<!---->
+			</div>
+		</div>
+	</body>
+</html>
