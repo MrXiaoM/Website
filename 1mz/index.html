@@ -51,9 +51,9 @@
 										</div>
 										<div class="wthree_tab_content_pos">
 											<div class="wthree_tab_content_pos_grid">
-												<h2>Howdy!</h2>
-												<h3>欢迎来到一鸣组官方网站</h3>
-												<h6>点击上方选项来查看更多信息吧</h6>
+												<h2>WARNING!</h2>
+												<h3>距离中考还有</h3>
+												<h6 id="timer">载入中…</h6>
 												<ul class="address">
 													<li>
 														<ul class="address-text">
@@ -82,6 +82,7 @@
 												</ul>
 											</div>
 										</div>
+										
 									</div>
 				<!-- //home -->
 								</div>
@@ -317,7 +318,7 @@
 										<div class="agileits_agile_about_mail">
 											<img src="images/2.jpg" alt=" " />
 											<img src="images/3.jpg" alt=" " />
-											<p>额… 我暂时没想到要写什么</p>
+											<p>我… 真的不知道要说些什么</p>
 										</div>
 									</div>
 								</div>
@@ -336,6 +337,29 @@
 								});
 							});			
 						</script>
+						<script language="javascript" type="text/javascript"> 
+function leftTimer(year,month,day,hour,minute,second){ 
+ var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date()); //计算剩余的毫秒数 
+ var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 
+ var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时 
+ var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+ var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数 
+ days = checkTime(days); 
+ hours = checkTime(hours); 
+ minutes = checkTime(minutes); 
+ seconds = checkTime(seconds); 
+ setInterval("leftTimer(2020,7,20,8,00,00)",1000); 
+ document.getElementById("timer").innerHTML = days+"天" + hours+"小时" + minutes+"分"+seconds+"秒"; 
+} 
+function checkTime(i){
+ if(i<10) 
+ { 
+ i = "0" + i; 
+ } 
+ return i; 
+} 
+leftTimer(2020,7,20,8,00,00);
+</script>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
