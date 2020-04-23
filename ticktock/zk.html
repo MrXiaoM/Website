@@ -45,6 +45,68 @@
                     </div>
                 </h1>
             </div>
+			<script language="javascript" type="text/javascript">
+            function leftTimer(year, month, day, hour, minute, second) {
+                var now = new Date();
+				var now_year = now.getFullYear();
+				var now_month = now.getMonth() + 1;
+				var now_date = now.getDate();
+				var now_day = now.getDay();
+				if (now_month < 10) now_month = "0" + now_month;
+				if (now_date < 10) now_date = "0" + now_date;
+				if(now_day == "1"){
+					now_day = "周一";
+				}
+				if(now_day == "2"){
+					now_day = "周二";
+				}
+				if(now_day == "3"){
+					now_day = "周三";
+				}
+				if(now_day == "4"){
+					now_day = "周四";
+				}
+				if(now_day == "5"){
+					now_day = "周五";
+				}
+				if(now_day == "6"){
+					now_day = "周六";
+				}
+				if(now_day == "7"){
+					now_day = "周末";
+				}
+				var leftTime = (new Date(year, month - 1, day, hour, minute, second)) - (new Date()); //计算剩余的毫秒数 
+                var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
+                var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
+                var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟 
+                var seconds = parseInt(leftTime / 1000 % 60, 10); //计算剩余的秒数 
+                days = checkTime(days);
+                hours = checkTime(hours);
+                minutes = checkTime(minutes);
+                seconds = checkTime(seconds);
+                setInterval("leftTimer(2020,7,20,8,00,00)", 1000);
+                var color = "#00FFAA";
+                if (days < 14) {
+                    color = "#FF0000";
+                }
+				if(leftTime > 0) document.getElementById("timer").innerHTML = "<p style=\"font-size: 1.5rem; color:" + color + "\">" + days + "天" + hours + "小时" + minutes + "分" + seconds + "秒</p>";
+				else {
+					document.getElementById("tip-text").innerHTML = "中考已到，祝你好运!";
+					document.getElementById("timer").innerHTML = "";
+				}
+				document.getElementById("nowtime").innerHTML = "<p style=\"font-size: 1rem;\">现在是 " 
+				+ now_year + "年" + now_month + "月" + now_date + "日 " + now_day +"</p>";
+
+            }
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+            document.getElementById("timer").style = "padding-top: 20px;";
+            leftTimer(2020, 7, 20, 8, 00, 00);
+			</script>
             <div class="rectangle-1" onselectstart="return false;">
                 <nobr>
                     <p class="rect-text" style="padding-top: 30px;">
@@ -108,68 +170,6 @@
                 <img src="img/obj_triangle.png" alt="" />
             </div>
         </div>
-	<script language="javascript" type="text/javascript">
-            function leftTimer(year, month, day, hour, minute, second) {
-                var now = new Date();
-				var now_year = now.getFullYear();
-				var now_month = now.getMonth() + 1;
-				var now_date = now.getDate();
-				var now_day = now.getDay();
-				if (now_month < 10) now_month = "0" + now_month;
-				if (now_date < 10) now_date = "0" + now_date;
-				if(now_day == "1"){
-					now_day = "周一";
-				}
-				if(now_day == "2"){
-					now_day = "周二";
-				}
-				if(now_day == "3"){
-					now_day = "周三";
-				}
-				if(now_day == "4"){
-					now_day = "周四";
-				}
-				if(now_day == "5"){
-					now_day = "周五";
-				}
-				if(now_day == "6"){
-					now_day = "周六";
-				}
-				if(now_day == "7"){
-					now_day = "周末";
-				}
-				var leftTime = (new Date(year, month - 1, day, hour, minute, second)) - (new Date()); //计算剩余的毫秒数 
-                var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
-                var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
-                var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟 
-                var seconds = parseInt(leftTime / 1000 % 60, 10); //计算剩余的秒数 
-                days = checkTime(days);
-                hours = checkTime(hours);
-                minutes = checkTime(minutes);
-                seconds = checkTime(seconds);
-                setInterval("leftTimer(2020,7,20,8,00,00)", 1000);
-                var color = "#00FFAA";
-                if (days < 14) {
-                    color = "#FF0000";
-                }
-				if(leftTime > 0) document.getElementById("timer").innerHTML = "<p style=\"font-size: 3rem; color:" + color + "\">" + days + "天" + hours + "小时" + minutes + "分" + seconds + "秒</p>";
-				else {
-					document.getElementById("tip-text").innerHTML = "中考已到，祝你好运!";
-					document.getElementById("timer").innerHTML = "";
-				}
-				document.getElementById("nowtime").innerHTML = "<p style=\"font-size: 2rem;\">现在是 " 
-				+ now_year + "年" + now_month + "月" + now_date + "日 " + now_day +"</p>";
-
-            }
-            function checkTime(i) {
-                if (i < 10) {
-                    i = "0" + i;
-                }
-                return i;
-            }
-            document.getElementById("timer").style = "padding-top: 20px;";
-            leftTimer(2020, 7, 20, 8, 00, 00);
-        </script>
         <footer class="mastfoot my-3">
             <div class="inner container">
                 <div class="row">
