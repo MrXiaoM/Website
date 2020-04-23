@@ -1,3 +1,4 @@
+
 <!--
 	
 	真巧啊，你也是来看网页源代码的吗？
@@ -36,7 +37,7 @@
 			
 			div#div_button{
 				position: absolute;
-				width: 100px; 
+				width: 150px; 
 				height: 50px; 
 				background-color: #00BBBC;
 				text-align: center; 
@@ -57,49 +58,74 @@
 				font-weight: 600;
 				color: #2898EA;
 			}
+			#header{
+				position: fixed;
+				color: #fff;
+				left: 0px;
+				top: 0px;
+				z-index: 9;
+				background-color: rgba(0,0,0,.1);
+				width:100%;
+				height:30px;
+				padding: 15px;
+			}
+			.h-left{
+				position: absolute;
+				left:20px;
+			}
+			.h-left h3{
+				font-size: 1.5rem;
+			}
+			.h-right{
+				position: absolute;
+				right:20px;
+			}
 		</style>
 		<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	<body>
-		
-		<img id="bgImg" src="images/fbg.png" height="100%" style="opacity:0.5; position:absolute; z-index:-4; right:0; top:0; height:100%; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; -ms-interpolation-mode: nearest-neighbor; background-position:right 0; background-repeat:no-repeat;"></img>
-
-		<img id="downImg" height="100%" style="opacity:0.5; position:absolute; z-index:-3; right:0; top:0; height:100%; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; -ms-interpolation-mode: nearest-neighbor; background-position:right 0; background-repeat:no-repeat;"></img>
-		<img id="upImg" height="100%" style="opacity:0.5; position:absolute; z-index:-2; right:0; top:0; height:100%; image-rendering: -moz-crisp-edges; image-rendering: -o-crisp-edges; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; -ms-interpolation-mode: nearest-neighbor; background-position:right 0; background-repeat:no-repeat;"></img>
-
-		<div id="main" class="w3ls-agile-profile" style="position:relative; top:100px; width:600px; margin:0 auto; text-align: center; background-color: rgba(0,188,188,.3); border: 2px solid rgba(255,255,255,.7);">
-			<div class="container">
-				<h2 class="w3ls-me">Mr_Xiao_M <br/>
+		<div id="header">
+			<div class="h-left">
+				<h3>Mr_Xiao_M</h3>
+			</div>
+			<div class="h-right">
+			</div>
+		</div>
+		<div id="main" class="w3ls-agile-profile" style="position:absolute;left: 0px; right: 0px; top:260px;width: 600px;margin: 0 auto;text-align: center;padding:15px; background-color: rgba(0,0,0,.3);border: 6px solid rgb(255,255,255);">
+			<div style="position: relative; left: -5px; top: -5px;display:inline-block; width:100px; height:100px; background-color:#12B7F5;background-size:100px 100px; background-image:url(https://q1.qlogo.cn/g?b=qq&nk=2431208142&s=640)">
+				
+			</div>
+			<div class="container" style="display:inline-block; width:470px;">
+				<h2 class="w3ls-me">小猫先生 / 小米大大<br/>
 			     <font id="sign_me" color="#81fdff" size=3> </font><br/>
 
 				</h2>
-			</div>
-			<div>
-		    	<a href="games/susie_badtime/play.html" title="Susie的坏时光"><img width=32 height=32 src="icons/SusieBadTime.png"></img></a>
-				<!--<a href="hs" target="_blank" title="Minecraft 圣灵服务器"><img width=32 height=32 src="icons/HolySpirit.png"></img></a><!---->
-				<a href="games/tsc.html" target="_blank" title="蓝色实验体: 终章"><img width=32 height=32 src="games/tsc.png"></img></a>
-				<a href="http://www.undertale.com" target="_blank" title="UNDERTALE"><img width=32 height=32 src="icons/UNDERTALE.png"></img></a>
-				<a href="archives/SurvivalCity.html" target="_blank" title="Minecraft 生存都市"><img width=32 height=32 src="icons/LivingCity.png"></img></a>
-				<a href="games/mikutap/play.html" target="_blank" title="Mikutap"><img width=32 height=32 src="icons/mikutap-icon.png"></img></a>
-		    </div>
-		</div>
-		<div style="position:absolute; top:0px; left:0px;">
-			<div id="div_button" style="left: 60px; top: 40px; height:100px; background-color:#12B7F5;background-size:100px 100px; background-image:url(https://q1.qlogo.cn/g?b=qq&nk=2431208142&s=640)">
-				
+				<div>
+					<a href="games/susie_badtime/play.html" title="Susie的坏时光"><img width=32 height=32 src="icons/SusieBadTime.png"></img></a>
+					<!--<a href="hs" target="_blank" title="Minecraft 圣灵服务器"><img width=32 height=32 src="icons/HolySpirit.png"></img></a><!---->
+					<a href="games/tsc.html" target="_blank" title="蓝色实验体: 终章"><img width=32 height=32 src="games/tsc.png"></img></a>
+					<a href="http://www.undertale.com" target="_blank" title="UNDERTALE"><img width=32 height=32 src="icons/UNDERTALE.png"></img></a>
+					<a href="archives/SurvivalCity.html" target="_blank" title="Minecraft 生存都市"><img width=32 height=32 src="icons/LivingCity.png"></img></a>
+					<a href="games/mikutap/play.html" target="_blank" title="Mikutap"><img width=32 height=32 src="icons/mikutap-icon.png"></img></a>
+				</div>
 			</div>
 			
-			<div id="div_button" style="left: 60px; top: 150px; background-color:#FFAFC9">
-				<a class="link" href="http://space.bilibili.com/330771760" target="_blank"><font color="#1E90FF" size=3><center>哔哩哔哩</center></font></a>
+		</div>
+		<div style="position:absolute; bottom:0px; right:0px; width: 190px; height: 210px;">
+			
+			
+			<div id="div_button" style="left: 20px; top: 20px; background-color:#0CA5D7">
+				<a class="link" href="http://space.bilibili.com/330771760" target="_blank"><font color="#FFFFFF" size=3><center>哔哩哔哩</center></font></a>
 			</div>
 			<!--
 			<div id="div_button" style="left: 60px; top: 270px; background-color:#00FFFF">
 				<a class="link" href="hs" target="_blank"><font color="#FF1493" size=4><center>圣灵服务器</center></font></a>
 			</div>
 			<!---->
-			<div id="div_button" style="left: 60px; top: 210px; background-color:#242921">
+			<div id="div_button" style="left: 20px; top: 80px; background-color:#24292E">
 				<a class="link" href="https://github.com/MrXiaoM" target="_blank"><font color="#FFFFFF" size=3><center>Github</center></font></a>
 			</div>
-			<div id="div_button" style="left: 60px; top: 270px; background-color:#73C9E5">
+			<div id="div_button" style="left: 20px; top: 140px; background-color:#0A0565">
 				<a class="link" href="https://github.com/MrXiaoM/LivingCityFAQ/blob/master/README.md" target="_blank"><font color="#FFFFFF" size=3><center>生存都市帮助</center></font></a>
 			</div>
 		</div>
@@ -110,7 +136,7 @@
 		
 		<div class="music_box">
 			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			<div id="jp_container_1" class="jp-audio" style="position:absolute; left:25px; bottom:15px; height:160px;">
+			<div id="jp_container_1" class="jp-audio" style="position:absolute; left:25px; bottom:15px; width:360px; height:160px;">
 				<div class="jp-type-single" style="position: absolute; bottom:5px;">
 					<img src="music/headimg.jpg" width=100 height=100 style="position:relative; z-index:2; top:90px; left:15px; border-radius:64px; border: 2px solid #050505;"></img>
 					<div class="music-info" style="position:relative; z-index:2; left:130px; bottom:16px; font-size:12px;">
@@ -119,46 +145,37 @@
 						<font>BGM</font>
 					</div>
 					<div class="jp-gui jp-interface" style="position:relative; bottom:20px; z-index:1;">
-							<a href="javascript:;" style="position:absolute; left: 370px;" class="jp-play" tabindex="1"></a>
-							<a href="javascript:;" style="position:absolute; left: 370px;" class="jp-pause" tabindex="1"></a>
-							<a href="javascript:;" style="position:absolute; left: 320px;" class="jp-stop" tabindex="1"></a>
-							<a href="javascript:;" style="position:absolute; left: 170px; top: 33px;" class="jp-mute" tabindex="1" title="mute"></a>
-							<a href="javascript:;" style="position:absolute; left: 170px; top: 33px;" class="jp-unmute" tabindex="1" title="unmute"></a>
-							<a href="javascript:;" style="position:absolute; left: 324px; top: 52px;" class="jp-volume-max" tabindex="1" title="max volume"></a>
+							<a href="javascript:;" style="position:absolute; left: 310px;" class="jp-play" tabindex="1" title="播放"></a>
+							<a href="javascript:;" style="position:absolute; left: 310px;" class="jp-pause" tabindex="1" title="暂停"></a>
+							<a href="javascript:;" style="position:absolute; left: 260px; top: -5px;" class="jp-stop" tabindex="1" title="停止"></a>
+							<a href="javascript:;" style="position:absolute; left: 25px; top: -7px;" class="jp-mute" tabindex="1" title="静音"></a>
+							<a href="javascript:;" style="position:absolute; left: 25px; top: -7px;" class="jp-unmute" tabindex="1" title="取消静音"></a>
 	
-						<div class="jp-progress" style="position:absolute; top:40px; left:130px;">
+						<div class="jp-progress" style="position:absolute; top:45px; left:130px;width:170px;">
 							<div class="jp-seek-bar">
 								<div class="jp-play-bar"></div>
 							</div>
 						</div>
-						<div class="jp-volume-bar" style="position:absolute; left:325px; top:50px; width:40px;">
+						<div class="jp-volume-bar" style="position:absolute; left:130px; top:10px; width:90px;">
 							<div class="jp-volume-bar-value"></div>
 						</div>
-						<div class="jp-time-holder" style="position:absolute; top:15px; left:130px;">
-							<div class="jp-current-time"></div>
-							<div class="jp-duration"></div>
+						<div class="jp-time-holder" style="position:absolute; top:20px; left:130px; width:120px;">
+							<nobr>
+								<div class="jp-current-time"></div>
+								<div class="jp-duration"></div>
+							</nobr>
 						</div>
 					</div>
 				</div>
-				<div id="btn_hideandshow" style="position:relative; left: 421px; top:60px; width: 10px; height: 30px; background: #009BE3; font-size:12px; z-index:2">
+				<a href="javascript:;" id="btn_hideandshow" style="position:absolute; left: 361px; top:60px; width: 15px; height: 30px;line-height:30px;text-align:center; background: #009BE3; font-size:12px; z-index:2" title="显示/隐藏面板">
 					<font color="#FFF">≡</font>
+				</a>
+				<div class="footer" style="position:absolute; bottom:5px;left:10px; font-size: 15px; font-weight: 500; text-align: center; letter-spacing: 2px; color: #fff; font-family: 'Questrial', sans-serif;">
+					<span id="footer_text"></span>
 				</div>
 			</div>
 		</div>
-		<div style="position: fixed; left:0px; bottom: 10px; width:100%; height: 45px; z-index:-1;">
-			<div style="position: absolute; bottom:10px; width: 100%; height:45px; overflow:hidden; background-color: rgba(0,0,0,.5);">
-			</div>
-				<div class="content">
-					<div style="position:relative; width:100%; bottom:50px;">
-						<ul id="lrc_list">
-
-						</ul>
-					</div>
-				</div>
-		</div>
-		<div class="footer" style="position:fixed; bottom:20px;left:40px; font-size: 15px; font-weight: 500; text-align: center; letter-spacing: 2px; color: #fff; font-family: 'Questrial', sans-serif;">
-			<span id="footer_text"></span>
-		</div>
+		
 		<div style="position:fixed; z-index:10; bottom: 5px; right:5px;">
 			<!--
 			<font color="#00FFFF">最近东少的圣灵服务器又开启啦!<br/>点击左上角的“圣灵服务器”查看吧~<br/>为什么我要写这段…因为服务器是我管理的 -v-</font>
@@ -191,27 +208,11 @@
 				signs[5]="Data Not Found.";
 				signs[6]="java.lang.NullPointerException";
 				signs[7]="到哔哩哔哩关注我吧~";
-				signs[8]="=v=";
+				signs[8]="━v━";
 				signs[9]="在现实中唯唯诺诺，在网络中… 也唯唯诺诺";
 				signs[10]="";
 				signtext = signs[RndNum(1)];
 				$('#sign_me').text(signtext);
-				setInterval(function(){
-					if(i == 0)
-					{
-						$('#downImg').attr('src', 'images/f' + frame + '.png');
-						i++;
-					}
-					else
-					{
-						$('#upImg').attr('src', 'images/f' + frame + '.png');
-						i = 0;
-					}
-					if(frame < 5)
-						frame++;
-					else frame = 1;
-										
-				},200);
 		
 				$("#jquery_jplayer_1").jPlayer({
 					play: function(event) {
@@ -245,7 +246,7 @@
 				var btn = document.getElementById("btn_hideandshow");
 				btn.onclick = function() {
 					if (box.style['left'] == "25px") {
-						$("#jp_container_1").animate({left:'-370px'},"slow");
+						$("#jp_container_1").animate({left:'-310px'},"slow");
 					} else {
 						$("#jp_container_1").animate({left:'25px'},"slow");
 					}
