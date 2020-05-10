@@ -40,14 +40,22 @@
                 <h1>
 					<p class="title-icon"></p>
 					<p id="nowtime"></p>
-                    <nobr><p id="tip-text">距离2020年中考还有</p></nobr>
+                    <p id="tip-text">距离2020年中考还有</p>
                     <div id="timer">
                     </div>
                 </h1>
             </div>
 			<script language="javascript" type="text/javascript">
             function leftTimer(year, month, day, hour, minute, second) {
-                var now = new Date();
+			var xhr = new XMLHttpRequest();  
+			if( !xhr ){  
+				xhr = new ActiveXObject("Microsoft.XMLHTTP");  
+			}  
+			xhr.open("HEAD",location.href,true);  
+			xhr.onreadystatechange=function(){  
+				if( xhr.readyState == 4 && xhr.status == 200 ){  
+					var now = new Date(xhr.getResponseHeader("Date"));  
+				
 				var now_year = now.getFullYear();
 				var now_month = now.getMonth() + 1;
 				var now_date = now.getDate();
@@ -75,7 +83,7 @@
 				if(now_day == "7"){
 					now_day = "周末";
 				}
-				var leftTime = (new Date(year, month - 1, day, hour, minute, second)) - (new Date()); //计算剩余的毫秒数 
+				var leftTime = (new Date(year, month - 1, day, hour, minute, second)) - (now); //计算剩余的毫秒数 
                 var days = parseInt(leftTime / 1000 / 60 / 60 / 24, 10); //计算剩余的天数 
                 var hours = parseInt(leftTime / 1000 / 60 / 60 % 24, 10); //计算剩余的小时 
                 var minutes = parseInt(leftTime / 1000 / 60 % 60, 10); //计算剩余的分钟 
@@ -84,7 +92,6 @@
                 hours = checkTime(hours);
                 minutes = checkTime(minutes);
                 seconds = checkTime(seconds);
-                setInterval("leftTimer(2020,7,20,8,00,00)", 1000);
                 var color = "#00FFAA";
                 if (days < 14) {
                     color = "#FF0000";
@@ -93,10 +100,19 @@
 				else {
 					document.getElementById("tip-text").innerHTML = "中考已到，祝你好运!";
 					document.getElementById("timer").innerHTML = "";
+					if(days < 2){
+						window.location.href = 'https://www.mrxiaom.top/zkend.html';
+						return;
+					}
 				}
+				
+                setInterval("leftTimer(2020,7,20,8,00,00)", 1000);
 				document.getElementById("nowtime").innerHTML = "<p style=\"font-size: 1rem;\">现在是 " 
 				+ now_year + "年" + now_month + "月" + now_date + "日 " + now_day +"</p>";
 
+				}  
+			}  
+			xhr.send(null);
             }
             function checkTime(i) {
                 if (i < 10) {
