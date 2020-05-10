@@ -108,7 +108,7 @@
 		<div style="width: 100%;height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2333333333; background: url(https://s1.ax1x.com/2020/04/23/J0CVmT.gif); background-position: center; background-repeat:no-repeat; background-color:#fff;" id="mask">
 		
 		</div>
-		<!----
+		<!---->
 		<div style="width: 100%;height: 100%; position: fixed; top: 0px; left: 0px; z-index: 233333333; background-position: center; background-repeat:no-repeat; background-color:#000;" id="intro">
 			<a href="javascript:;" onclick="onIntro();" style="position: absolute; margin: 0 auto; left: 50%;  top: 50%; border: 5px solid #FF7F27; color: #FF7F27; padding-left:20px; padding-right:20px; padding-top:6px; padding-bottom:10px; font-size: 2rem;">点我</a>
 		</div>
@@ -224,6 +224,7 @@
 			$("#jp_container_1").animate({left:'-310px'},"slow");
 			document.getElementById("btn_hideandshow_text").innerHTML = "&gt;";
 			function onIntro(){
+				document.title = "毕业啦 - Mr_Xiao_M";
 				$("#intro").animate({top:'100%'},"slow");
 				$(".jp-play").click();
 			}
