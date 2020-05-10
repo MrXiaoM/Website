@@ -1,0 +1,232 @@
+
+<!--
+	
+	真巧啊，你也是来看网页源代码的吗？
+	
+	来，咱一起
+	
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<meta name="image" content="images/bg.jpg" />
+		
+		<title>??? - Mr_Xiao_M</title>
+		<link rel="icon" href="logo-16x16.png" sizes="16x16">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/><!---->
+		<link href="css/blue.css" rel="stylesheet" type="text/css" />
+		<!---->
+		<style type="text/css">
+
+			ul, ol, dl {
+				list-style: none;
+			}
+			.content {position:relative; overflow:scroll; width: 100%; height:45px; overflow:hidden; bottom:10px; background-color: transparent; margin:0 auto;}
+			#lrc_list{margin:10px auto; display:none; line-height:20px;}
+			#lrc_list li{color:#FFC0CB; margin-top:6px; margin-bottom:13px; font:normal 14px/2.1 'microsoft yahei';text-align:center; line-height:18px;}
+			#lrc_list li.hover { line-height:20px; font-weight:bold }
+			
+			div#div_button{
+				position: absolute;
+				width: 150px; 
+				height: 50px; 
+				background-color: #00BBBC;
+				text-align: center; 
+				line-height: 50px;
+				border-radius: 7px;
+			}
+			
+			a.link{
+				position: absolute;
+				left: 0px;
+				top: 0px; 
+				width: 100%; 
+				height: 100%; 
+				text-align: center;
+			}
+			.footer a {
+				font-size: 15px;
+				font-weight: 600;
+				color: #2898EA;
+			}
+			#header{
+				position: fixed;
+				color: #fff;
+				left: 0px;
+				top: 0px;
+				z-index: 9;
+				background-color: rgba(0,0,0,.1);
+				width:100%;
+				height:30px;
+				padding: 15px;
+			}
+			.h-left{
+				position: absolute;
+				left:20px;
+			}
+			.h-left h3{
+				font-size: 1.5rem;
+			}
+			.h-right{
+				position: absolute;
+				right:20px;
+			}
+			.snow-container{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				background:url(https://s1.ax1x.com/2020/05/08/YKFvMF.jpg) no-repeat 0px 0px; 
+				background-size: cover;
+				background-position: 50% 50%; 
+				background-attachment: fixed; 
+				background-color: #000;
+			}
+			.comment_box{
+				text-align: left;
+				padding-left: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-right: 20px;
+				margin-top: 16px;
+				border: 2px solid rgb(128,128,128);
+				border-radius: 16px;
+				background: rgba(255,255,255,.3);
+			}
+		</style>
+		<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+		<div class="snow-container"></div>
+		
+		<div style="width: 100%;height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2333333333; background: url(https://s1.ax1x.com/2020/04/23/J0CVmT.gif); background-position: center; background-repeat:no-repeat; background-color:#fff;" id="mask">
+		
+		</div>
+		<!----
+		<div style="width: 100%;height: 100%; position: fixed; top: 0px; left: 0px; z-index: 233333333; background-position: center; background-repeat:no-repeat; background-color:#000;" id="intro">
+			<a href="javascript:;" onclick="onIntro();" style="position: absolute; margin: 0 auto; left: 50%;  top: 50%; border: 5px solid #FF7F27; color: #FF7F27; padding-left:20px; padding-right:20px; padding-top:6px; padding-bottom:10px; font-size: 2rem;">点我</a>
+		</div>
+		<!---->
+		<div id="main" class="w3ls-agile-profile" style="position:absolute;left: 0px; right: 0px; top:150px;width: 600px;margin: 0 auto;text-align: center;padding:15px; background-color: rgba(0,0,0,.3);border: 6px solid rgb(255,255,255);">
+			<div class="container">
+				<h2 class="w3ls-me">毕业啦!<br/>
+			     <font color="#81fdff" size=3>初中三年来，你一定付出了很多</font><br/>
+				</h2>
+				<h2 class="w3ls-me">留言板</h2>
+					<font color="#ddd" size=3>想在此留言吗? 向 mrxiaom@qq.com 发送电子邮件吧! <br/>
+					经站长审核通过后即可在此显示，邮件需要提供姓名和留言内容<br/>
+				<div class="comment_box">
+					<font color="#DC2B2B" size=5>站长</font><br/>
+					<font color="#eee" size=3>
+						Kinda sad, I think. I feel kinda sad right now.<br/>
+						I don't know why.<br/>
+						有点难过，我觉得我现在有点难过<br/>
+						但我也不知道为什么
+					</font>
+				</div>
+			</div>
+		</div>
+		<div class="music_box">
+			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+			<div id="jp_container_1" class="jp-audio" style="position:absolute; left:25px; bottom:15px; width:360px; height:130px;">
+				<div class="jp-type-single" style="position: absolute; bottom:5px;">
+					<img src="music/ut.jpg" width=100 height=100 style="position:relative; z-index:2; top:90px; left:15px; border-radius:64px; border: 2px solid #050505;"></img>
+					<div class="music-info" style="position:relative; z-index:2; left:130px; bottom:5px; font-size:12px;">
+						<font size="3" color="#82FDFF">Uwa!! So Holiday♫</font>
+					</div>
+					<div class="jp-gui jp-interface" style="position:relative; bottom:0px; z-index:1;">
+							<a href="javascript:;" style="position:absolute; left: 310px;" class="jp-play" tabindex="1" title="播放"></a>
+							<a href="javascript:;" style="position:absolute; left: 310px;" class="jp-pause" tabindex="1" title="暂停"></a>
+							<a href="javascript:;" style="position:absolute; left: 260px; top: -5px;" class="jp-stop" tabindex="1" title="停止"></a>
+							<a href="javascript:;" style="position:absolute; left: 25px; top: -7px;" class="jp-mute" tabindex="1" title="静音"></a>
+							<a href="javascript:;" style="position:absolute; left: 25px; top: -7px;" class="jp-unmute" tabindex="1" title="取消静音"></a>
+	
+						<div class="jp-progress" style="position:absolute; top:45px; left:130px;width:170px;">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-volume-bar" style="position:absolute; left:130px; top:10px; width:90px;">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+						<div class="jp-time-holder" style="position:absolute; top:20px; left:130px; width:120px;">
+							<nobr>
+								<div class="jp-current-time"></div>
+								<div class="jp-duration"></div>
+							</nobr>
+						</div>
+					</div>
+				</div>
+				<a href="javascript:;" id="btn_hideandshow" style="position:absolute; left: 361px; top:50px; width: 15px; height: 30px;line-height:30px;text-align:center; background: #009BE3; font-size:12px; z-index:2" title="显示/隐藏面板">
+					<font id="btn_hideandshow_text" style="color: #fff">&gt;</font>
+				</a>
+			</div>
+		</div>
+		<div class="footer" style="position:fixed; bottom:5px;right:10px; font-size: 15px; font-weight: 500; text-align: center; letter-spacing: 2px; background:rgba(0,0,0,.5); color: #fff; font-family: 'Questrial', sans-serif;">
+			<span id="footer_text"></span>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+		<script type="text/javascript" src="js/lrc.js"></script>
+		<script type="text/javascript" src="js/jquery.jplayer.js"></script>
+		<script src="http://www.lmlblog.com/winter/templets/xq/js/snowy.js"></script>
+		<script src="http://www.lmlblog.com/blog/12/js/Snow.js"></script>
+		<style>#mask{display:none;}</style>
+		<script>
+			
+				$("#jquery_jplayer_1").jPlayer({
+					play: function(event) {
+						//点击开始方法调用lrc.start歌词方法 返回时间time
+						$.lrc.start($('#lrc_content').val(), function() {
+							return time;
+						});
+					},
+					ready: function (event) {
+						$(this).jPlayer("setMedia", {
+							mp3:"https://music.163.com/song/media/outer/url?id=39227594.mp3" //mp3的播放地址
+						});
+						$(this).jPlayer("stop");
+					},
+					timeupdate: function(event) {
+						if(event.jPlayer.status.currentTime==0){
+							time = "";
+							$.lrc.start($('#lrc_content').val(), function() {
+								return time;
+							});
+						}else {
+							time = event.jPlayer.status.currentTime;
+						}
+					},
+					ended:function(event){
+						$(".jp-play").click();
+					},
+					swfPath: "/js", solution:"html, flash", supplied: "mp3", wmode: "window"
+				});
+				var box = document.getElementById("jp_container_1");
+				var btn = document.getElementById("btn_hideandshow");
+				var btntext = document.getElementById("btn_hideandshow_text");
+				btn.onclick = function() {
+					if (box.style['left'] == "25px") {
+						$("#jp_container_1").animate({left:'-310px'},"slow");
+						btntext.innerHTML = "&gt;";
+					} else {
+						$("#jp_container_1").animate({left:'25px'},"slow");
+						btntext.innerHTML = "&lt;";
+					}
+				};
+			
+			$("#jp_container_1").animate({left:'-310px'},"slow");
+			document.getElementById("btn_hideandshow_text").innerHTML = "&gt;";
+			function onIntro(){
+				$("#intro").animate({top:'100%'},"slow");
+				$(".jp-play").click();
+			}
+		</script>
+	</body>
+</html>
