@@ -7,20 +7,71 @@
 <title>404</title>
 <style>
 	body{
-		background-color:#444;
-		font-size:14px;
+		background-color: #eee;
+		background: linear-gradient(
+			-45deg, 
+			#eee 0,   #eee 25%, #ddd 25%, #ddd 50%, 
+			#eee 50%, #eee 75%, #ddd 75%, #ddd
+		);
+		background-size: 50px 50px;
+		font-size:14px; 
 	}
-	h3{
-		font-size:60px;
-		color:#eee;
+	.title{
+		font-size:75px;
+		color:#ff6666;
 		text-align:center;
-		padding-top:30px;
 		font-weight:normal;
+	}
+	.nfimg{
+		position: fixed;
+		bottom: 0px;
+		right: 0px;
+		width: 512px;
+		height: 512px;
+		background: url(images/404.png);
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+	}
+	.info{
+		position: fixed;
+		top: 64px;
+		left: 64px;
+	}
+	.font1{
+		display: block;
+		font-size:36px;
+		color:#666;
+	}
+	.font2{
+		display: block;
+		font-size:24px;
+		color:#777;
+	}
+	a{
+		color: #2898EA;
+		text-decoration:none;
+        cursor: pointer; 
+        -webkit-transition: all .5s; 
+        -moz-transition: all .5s; 
+        -ms-transition: all .5s; 
+        -o-transition: all .5s; 
+        transition: all .5s;
+	}
+	a:hover{
+		color: #39c5bb
 	}
 </style>
 </head>
 
 <body>
-<h3>404，您请求的文件不存在!</h3>
+<span class="nfimg"></span>
+<div class="info">
+	<font class="title">- 404 -</font>
+	<div class="desc">
+		<font class="font1">所请求的文件未找到</font>
+		<font class="font2">此时，你可以选择</font>
+		<font class="font2"><a href="javascript:;" onclick="window.history.back();">后退</a> | <a href="https://www.mrxiaom.top">主页</a></font>
+	</div>
+</div>
 </body>
 </html>
