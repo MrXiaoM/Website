@@ -43,19 +43,12 @@
                     <p id="tip-text">距离2020年中考还有</p>
                     <div id="timer">
                     </div>
+					<font color="#ddd" size=2>* 根据本机系统时间及中考日8:00计算 *</font>
                 </h1>
             </div>
 			<script language="javascript" type="text/javascript">
             function leftTimer(year, month, day, hour, minute, second) {
-			var xhr = new XMLHttpRequest();  
-			if( !xhr ){  
-				xhr = new ActiveXObject("Microsoft.XMLHTTP");  
-			}  
-			xhr.open("HEAD",location.href,true);  
-			xhr.onreadystatechange=function(){  
-				if( xhr.readyState == 4 && xhr.status == 200 ){  
-					var now = new Date(xhr.getResponseHeader("Date"));  
-				
+				var now = new Date();  
 				var now_year = now.getFullYear();
 				var now_month = now.getMonth() + 1;
 				var now_date = now.getDate();
@@ -80,7 +73,7 @@
 				if(now_day == "6"){
 					now_day = "周六";
 				}
-				if(now_day == "7"){
+				if(now_day == "0"){
 					now_day = "周末";
 				}
 				var leftTime = (new Date(year, month - 1, day, hour, minute, second)) - (now); //计算剩余的毫秒数 
@@ -110,9 +103,7 @@
 				document.getElementById("nowtime").innerHTML = "<p style=\"font-size: 1rem;\">现在是 " 
 				+ now_year + "年" + now_month + "月" + now_date + "日 " + now_day +"</p>";
 
-				}  
-			}  
-			xhr.send(null);
+				
             }
             function checkTime(i) {
                 if (i < 10) {
