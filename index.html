@@ -80,13 +80,16 @@
 				position: absolute;
 				right:20px;
 			}
+
 		</style>
 		<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	<body>
+		<div id="background" style="position:fixed;top:-5%;left:-5%;width:110%;height:110%; background:url(https://s1.ax1x.com/2020/04/24/J0PWVO.jpg) no-repeat 0px 0px; background-size: cover; background-position: 50% 50%; background-attachment: fixed; background-color: #000;">
+		</div>
 		<div id="header">
 			<div class="h-left">
-				<h3>class Mr_Xiao_M { String status="暂退，有事不要叫我"; }</h3>
+				<h3>public class Mr_Xiao_M { final String status="暂退，有事不要叫我"; }</h3>
 			</div>
 			<div class="h-right">
 			</div>
@@ -109,8 +112,21 @@
 					<a href="games/mikutap/play.html" target="_blank" title="Mikutap"><img width=32 height=32 src="icons/mikutap-icon.png"></img></a>
 				</div>
 			</div>
-			
 		</div>
+		<!----
+		<div id="video-background" style="z-index:999; position:fixed; top:0px; left:0px;width:100%;height:100%; text-align: center;padding:15px; background-color: rgba(0,0,0,.5);">
+			<div>
+				<a href="javascript:;" style="color: white; font-size:2rem;" onclick="document.getElementById('video-background').style='display:none';">×</a>
+			</div>
+			<div class="container" style="display:inline-block; width:470px;">
+				<h2 class="w3ls-me">视频<br/>
+				</h2>
+				<div style="width:600px; height:500px; margin-left:-300px; left:50%; position:absolute;">
+				<iframe src="https://player.bilibili.com/player.html?aid=97870823&bvid=BV1JE411A7VK&cid=167071203&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:100%; height:100%;"> </iframe>
+				</div>
+			</div>
+		</div>
+		<!---->
 		<div style="position:absolute; bottom:0px; right:0px; width: 190px; height: 210px;">
 			
 			
@@ -130,13 +146,13 @@
 			</div>
 		</div>
 		
-		<div style="width: 100%;height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2333333333; background: url(https://s1.ax1x.com/2020/04/23/J0CVmT.gif); background-position: center; background-repeat:no-repeat; background-color:#FCFCFC;" id="mask">
+		<div style="width: 100%;height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2333333333; background: url(https://s1.ax1x.com/2020/04/23/J0CVmT.gif); background-position: center; background-repeat:no-repeat; background-color:#fff;" id="mask">
 		
 		</div>
 		
 		<div class="music_box">
 			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			<div id="jp_container_1" class="jp-audio" style="position:absolute; left:10px; bottom:15px; width:360px; height:160px;">
+			<div id="jp_container_1" class="jp-audio" style="position:absolute; left:25px; bottom:15px; width:360px; height:160px;">
 				<div class="jp-type-single" style="position: absolute; bottom:5px;">
 					<img src="music/headimg.jpg" width=100 height=100 style="position:relative; z-index:2; top:90px; left:15px; border-radius:64px; border: 2px solid #050505;"></img>
 					<div class="music-info" style="position:relative; z-index:2; left:130px; bottom:16px; font-size:12px;">
@@ -188,10 +204,8 @@
 		<style>#mask{display:none;}</style>
 		<script>
 			
-			function RndNum(n){
-				var rnd="";
-				for(var i=0;i<n;i++)
-					rnd+=Math.floor(Math.random()*10);
+			function RndNum(max){
+				var rnd=Math.floor(Math.random()*max);
 				return rnd;
 			}
 			
@@ -211,7 +225,15 @@
 				signs[8]="━v━";
 				signs[9]="在现实中唯唯诺诺，在网络中… 也唯唯诺诺";
 				signs[10]="";
-				signtext = signs[RndNum(1)];
+				/* ============== [ WARNING START ] ============= */
+				signs[11]="起初，那只是一名玩家的消失";
+				signs[12]="只是一个团伙的莫名解散";
+				signs[13]="但谁又在乎呢?"
+				signs[14]="直到「它」真正被引起注意的时候";
+				signs[15]="一切，都晚了，世界的秩序将被破坏";
+				/* =============== [ WARNING END ] ============== */
+				
+				signtext = signs[RndNum(10)];
 				$('#sign_me').text(signtext);
 		
 				$("#jquery_jplayer_1").jPlayer({
@@ -248,7 +270,7 @@
 					if (box.style['left'] == "25px") {
 						$("#jp_container_1").animate({left:'-310px'},"slow");
 					} else {
-						$("#jp_container_1").animate({left:'10px'},"slow");
+						$("#jp_container_1").animate({left:'25px'},"slow");
 					}
 				};
 			$(".jp-play").click();
