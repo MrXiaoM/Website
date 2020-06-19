@@ -272,7 +272,19 @@
 						$("#jp_container_1").animate({left:'25px'},"slow");
 					}
 				};
-			$(".jp-play").click();
+			
+		    var firstPlay=false;
+		    function toggleSound() {
+			if(!firstPlay){
+            	 	    if ($("#jquery_jplayer_1").data("jPlayer").status.paused) { //判读是否播放  
+				$(".jp-play").click();
+            	            }
+			    else{
+                	        firstPlay = true;
+			    }
+			}
+        	    }
+		    setInterval("toggleSound()",1);
 		</script>
 	</body>
 </html>
