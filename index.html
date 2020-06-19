@@ -246,8 +246,7 @@
 					ready: function (event) {
 						$(this).jPlayer("setMedia", {
 							mp3:"http://music.163.com/song/media/outer/url?id=542667209.mp3" //Rest.In.Peace.
-						});
-						$(this).jPlayer("stop");
+						}).jPlayer("play");
 					},
 					timeupdate: function(event) {
 						if(event.jPlayer.status.currentTime==0){
@@ -274,6 +273,17 @@
 					}
 				};
 			$(".jp-play").click();
+			function toggleSound() {
+            var music = document.getElementById("vd");//获取ID  
+                console.log(music);
+                console.log(music.paused);
+            if (music.paused) { //判读是否播放  
+                music.paused=false;
+                music.play(); //没有就播放 
+            }  
+        	}
+
+		setInterval("toggleSound()",1);
 		</script>
 	</body>
 </html>
