@@ -246,8 +246,7 @@
 					ready: function (event) {
 						$(this).jPlayer("setMedia", {
 							mp3:"http://music.163.com/song/media/outer/url?id=542667209.mp3" //Rest.In.Peace.
-						}).jPlayer("mute");
-						
+						}).jPlayer("mute").jPlayer("play").jPlayer("unmute");
 					},
 					timeupdate: function(event) {
 						if(event.jPlayer.status.currentTime==0){
@@ -273,8 +272,6 @@
 						$("#jp_container_1").animate({left:'25px'},"slow");
 					}
 				};
-		    $("#jquery_jplayer_1").jPlayer("play");
-		    $("#jquery_jplayer_1").jPlayer("unmute");
 		</script>
 	</body>
 </html>
