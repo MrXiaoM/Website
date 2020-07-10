@@ -1,328 +1,437 @@
-
+<!DOCTYPE HTML>
 <!--
-	
-	真巧啊，你也是来看网页源代码的吗？
-	
-	来，咱一起
-	
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<meta name="title" content="Mr_Xiao_M，一名热爱编程的Minecraft玩家" />
-		<meta name="keywords" content="我的世界,Minecraft,MC,服务器,像素,游戏,Mr_Xiao_M,Xiao_M,2431208142,小猫,小米" />
-		<meta name="description" content="打开个人主页" />
-		<meta name="image" content="images/bg.jpg" />
-		
-		<title>主页 - Mr_Xiao_M</title>
-		<link rel="icon" href="logo-16x16.png" sizes="16x16">
-		
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<meta name="keywords" content="Mr_Xiao_M, 我的世界, Minecraft, 当个创世神, 博客, 主页, Xiao_M, 生存都市, 服务器, 伺服器, 技术, 编程">
-        <meta name="title" content="主页 - Mr_Xiao_M">
-
-		<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/><!---->
-		<link href="css/blue.css" rel="stylesheet" type="text/css" />
-		<!---->
-		<style type="text/css">
-
-			ul, ol, dl {
-				list-style: none;
+		<title>个人主页 - 小猫先生</title>
+		<link rel="icon" href="favicon-16x16.png" sizes="16x16"/>
+		<link rel="icon" href="favicon-32x32.png" sizes="32x32"/>
+		<link rel="icon" href="favicon.png" sizes="48x48"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function nofind(){  
+				var img=event.srcElement;  
+				img.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUMSURBVGhD7VrNK3RfHP+Od8bbjNfIW2wIhUwkUYqtsrIVCynZKOyw8BQLJCnNhq35I8SKBVlYyAaJkpJ3wvmdz7e5uua5c894fjOeee7Mpz7dud9z5t7zOed7Xu45X5sQgiIJMd5rxCAq2OqIOMEBD1qTk5Nib2+PfyckJNDt7S09Pz9TcnIy28zw9vZGNpvtkzExMV/uwaenJ85bUFBAdXV1NDIyYmNDsAHBKra3t4usrCwhCyakQJGYmCgyMzP5CpusAFMmJSWZEsXIy8vjZ6WlpfF9dna2GBsbk683LtOfUtnCExMTwuPx0OnpKcnCkBRJd3d33Crv7+/cWqAZXl9fvb+MgdaVFcrecn5+TlI8fXx80P39Pbf48PAwDQ0NBaXFlYKle4n9/X1KSUmhgYEBamhooNjYWBaM/8bFxXlz+gf+awZ0jZeXF3p4eKDBwUEWjkqA6NTUVMrIyKDZ2Vnq7e39/6K1pvbHoqIidrWysjJ5a5wnmMR7pEh268bGRu4Sdrud79fW1mQW4/8FSuUoDRd2OBxKtwwW0D3gNeDOzo6turqa7fCqmZkZ+vXrl7lLqmBUC3pWVFRwLcsCyFvjPMEkPArFgldpto6ODpGfn892lGV+fv4z7bs0NOpZXl7OI7OsYXlrnCeYRAXHx8ezOL3d6XQKlEUOYpy2uLj4JT1QGhr1rKysZMG+BQgV8R45SImcnBx5+zUNttzcXFFSUsItvb6+/lseFQ2NekIwWhcDh29aKIj3YX7HvOybBjY3N3PlQzSuc3Nz0vx7Pn80NOr504I1IWhB3zSNcmrkPBhXMJL7ppsx7NbSmBUAzMH+MDo6Si0tLbzE3d3dpdbWVlRAQAg7wVhwyH7K6++pqSnhdrvFysoKC1paWhLLy8sCU5fL5aLCwkJKT0+n7e1twiDGD1DBqNn1/GmXxnRUU1PDAxeKhxEbNrgvpiaURQpml0c60jCCt7W1yb8bP1PPsGthFOri4oKXlIAUTPIDg5eyWPxg/Y6lqrYQKi4u5vTNzU2+V0G5lq6qqhJHR0f8ULmYD80nmw5yvS7Ozs64D8tpiD9YUEbZsnR5ecnrbnw+Hh8f09XVFaFssKMipLtjLW5eRq2p/fGnXfq77OrqYtcuLS0V4+Pj0mScT2PYufR3IZei/DWFz1etG5jhnxcMmE1hvrCMYLgrBjYVLCEYAxYQUYJ5QFJsNQHRFv4XoQ1aESP4O7CEYKzCsAeGXU8Voi1sdUQFWx1RwVZHVLDVERVsdUQFWx1RwVZHVLAvtO2TQL41/wZw6IbvYVwDiUNRCsZpHo47VKFHfws4PcTWDuK8sCGvglIwHnZzc0OPj49eS3jh8PCQY7ywY4mdSxWUgnHojHPYiooKryW8UFtby9fr6+uATiCUgtE3EA6IU7twxMnJyWeoot1u91r9Q3lc6nK5xMHBAfeV/v5+qq+vZ/eBq4PYPEOlhBLd3d02j8cjenp6vuzDIqBldXWVj0sR3et2u6mvr898rxaCzTg9Pc1HkVIchwQ6HA4+PsXJPE7itRP6UFJWNh+J6okIAUTc4oryNDU1yeIaa9DT0OjLzs5ODiNC2AHOiRFWhPBhhP5CdKgJgXg3hEMgQoy12DFcEay2sLAgi2pcfj2VLq0B4X5bW1vcZ+DCiLZBVABCEhBOHGpI4dx9ZIt/hj5gunQ6nbSxsaE+cvAiYMFWgXKUthqigq2OCBNM9B+RbZfwl8HGeAAAAABJRU5ErkJggg==";
+				img.onerror=null;
 			}
-			.content {position:relative; overflow:scroll; width: 100%; height:45px; overflow:hidden; bottom:10px; background-color: transparent; margin:0 auto;}
-			#lrc_list{margin:10px auto; display:none; line-height:20px;}
-			#lrc_list li{color:#FFC0CB; margin-top:6px; margin-bottom:13px; font:normal 14px/2.1 'microsoft yahei';text-align:center; line-height:18px;}
-			#lrc_list li.hover { line-height:20px; font-weight:bold }
-			
-			div#div_button{
-				position: absolute;
-				width: 150px; 
-				height: 50px; 
-				background-color: #00BBBC;
-				text-align: center; 
-				line-height: 50px;
-				border-radius: 7px;
-			}
-			
-			a.link{
-				position: absolute;
-				left: 0px;
-				top: 0px; 
-				width: 100%; 
-				height: 100%; 
-				text-align: center;
-			}
-			.footer a {
-				font-size: 15px;
-				font-weight: 600;
-				color: #2898EA;
-			}
-			#header{
-				position: fixed;
-				color: #fff;
-				left: 0px;
-				top: 0px;
-				z-index: 9;
-				background-color: rgba(0,0,0,.1);
-				width:100%;
-				height:30px;
-				padding: 15px;
-			}
-			.h-left{
-				position: absolute;
-				left:20px;
-			}
-			.h-left h3{
-				font-size: 1.5rem;
-			}
-			.h-right{
-				position: absolute;
-				right:20px;
-			}
-
-		</style>
-		<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+		</script>
 	</head>
-	<body>
-		<div id="background" style="position:fixed;top:-5%;left:-5%;width:110%;height:110%; background:url(https://s1.ax1x.com/2020/04/11/G7Wtv8.md.png) no-repeat 0px 0px; background-size: cover; background-position: 50% 50%; background-attachment: fixed; background-color: #000;">
-		</div>
-		<div id="header">
-			<div class="h-left">
-				<h3>public class Mr_Xiao_M { final String status="暂退，有事不要叫我"; }</h3>
-			</div>
-			<div class="h-right">
-			</div>
-		</div>
-		<div id="main" class="w3ls-agile-profile" style="position:absolute;left: 0px; right: 0px; top:160px;width: 600px;margin: 0 auto;text-align: center;padding:15px; background-color: rgba(0,0,0,.3);border: 6px solid rgb(255,255,255);">
-			<div style="position: relative; left: -5px; top: -5px;display:inline-block; width:100px; height:100px; background-color:#12B7F5;background-size:100px 100px; background-image:url(https://q1.qlogo.cn/g?b=qq&nk=2431208142&s=640)">
-				
-			</div>
-			<div class="container" style="display:inline-block; width:470px;">
-				<h2 class="w3ls-me">小猫先生 / 小米大大<br/>
-			     <font id="sign_me" color="#81fdff" size=3> </font><br/>
+	<body class="is-preload">
 
-				</h2>
-				<div>
-					<a href="games/susie_badtime/play.html" title="Susie的坏时光"><img width=32 height=32 src="icons/SusieBadTime.png"></img></a>
-					<!--<a href="hs" target="_blank" title="Minecraft 圣灵服务器"><img width=32 height=32 src="icons/HolySpirit.png"></img></a><!---->
-					<a href="games/tsc.html" target="_blank" title="蓝色实验体: 终章"><img width=32 height=32 src="games/tsc.png"></img></a>
-					<a href="http://www.undertale.com" target="_blank" title="UNDERTALE"><img width=32 height=32 src="icons/UNDERTALE.png"></img></a>
-					<a href="s0.html" target="_blank" title="Minecraft 生存都市"><img width=32 height=32 src="icons/LivingCity.png"></img></a>
-					<a href="games/mikutap/play.html" target="_blank" title="Mikutap"><img width=32 height=32 src="icons/mikutap-icon.png"></img></a>
-				</div>
-			</div>
-		</div>
-		<!----
-		<div id="video-background" style="z-index:999; position:fixed; top:0px; left:0px;width:100%;height:100%; text-align: center;padding:15px; background-color: rgba(0,0,0,.5);">
-			<div>
-				<a href="javascript:;" style="color: white; font-size:2rem;" onclick="document.getElementById('video-background').style='display:none';">×</a>
-			</div>
-			<div class="container" style="display:inline-block; width:470px;">
-				<h2 class="w3ls-me">视频<br/>
-				</h2>
-				<div style="width:600px; height:500px; margin-left:-300px; left:50%; position:absolute;">
-				<iframe src="https://player.bilibili.com/player.html?aid=97870823&bvid=BV1JE411A7VK&cid=167071203&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width:100%; height:100%;"> </iframe>
-				</div>
-			</div>
-		</div>
-		<!---->
-		<div style="position:absolute; bottom:60px; right:0px; width: 190px; height: 210px;">
-			
-			
-			<div id="div_button" style="left: 20px; top: 20px; background-color:#0CA5D7">
-				<a class="link" href="http://space.bilibili.com/330771760" target="_blank"><font color="#FFFFFF" size=3><center>哔哩哔哩</center></font></a>
-			</div>
-			<!--
-			<div id="div_button" style="left: 60px; top: 270px; background-color:#00FFFF">
-				<a class="link" href="hs" target="_blank"><font color="#FF1493" size=4><center>圣灵服务器</center></font></a>
-			</div>
-			<!---->
-			<div id="div_button" style="left: 20px; top: 80px; background-color:#24292E">
-				<a class="link" href="https://github.com/MrXiaoM" target="_blank"><font color="#FFFFFF" size=3><center>Github</center></font></a>
-			</div>
-			<div id="div_button" style="left: 20px; top: 140px; background-color:#0A0565">
-				<a class="link" href="https://github.com/MrXiaoM/LivingCityFAQ/blob/master/README.md" target="_blank"><font color="#FFFFFF" size=3><center>生存都市帮助</center></font></a>
-			</div>
-		</div>
-		
-		<div style="width: 100%;height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2333333333; background: url(https://s1.ax1x.com/2020/04/23/J0CVmT.gif); background-position: center; background-repeat:no-repeat; background-color:#FCFCFC" id="mask">
-		
-		</div>
-		<textarea id="lrc_content" name="textfield" cols="70" rows="10" style="display:none;">
-[00:00.00]<br/><br/>
-[00:00.01]<br/><br/>
-[00:20.92]Yeah <br/> 
-[00:22.66]<br/><br/>
-[00:25.29]Who am I? Someone that's afraid to let go, uh <br/> 我是谁？一个害怕被放任自流的人
-[00:28.42]You decide if you're ever gonna let me know (yeah) <br/> 你决定是否让我知道
-[00:31.64]Suicide if you ever try to let go, uh <br/> 如果你想要离开，那我也“走”吧
-[00:34.81]I'm sad, I know, yeah, I'm sad, I know, yeah <br/> 我很难过，我知道，我很悲伤，我明白
-[00:38.11]Who am I? Someone that's afraid to let go, uh <br/> 我是谁？一个害怕被抛弃的人
-[00:41.25]You decide if you're ever gonna let me know (yeah) <br/> 你决定是否让我知道
-[00:44.40]Suicide if you ever try to let go, uh <br/> 如果你想要离开，那我也“走”吧
-[00:47.49]I'm sad, I know, yeah, I'm sad, I know, yeah <br/> 我很难过，我知道，我很悲伤，我明白
-[00:51.17]<br/><br/>
-[00:51.28]I gave her everything <br/> 我给了她一切
-[00:53.70]She took my heart and left me lonely <br/> 她带走了我的心 徒留我一人寂寞
-[00:57.30]I've been broken, heart's contentious <br/> 我已经心碎了
-[01:00.45]I won't fix, I'd rather weep <br/> 我不会去修复它，我宁愿哭泣
-[01:04.06]I'm lost then I'm found <br/> 我一边迷失一边寻找
-[01:06.77]But it's torture being in love <br/> 这就是爱的煎熬
-[01:10.42]I love when you're around <br/> 你在我身边时我爱你
-[01:13.36]But I f@ckin' hate when you leave <br/> 但你离开时我他妈的恨透了你
-[01:16.87]<font style="color: #666">I can't breath...</font><br/><br/>
-[01:16.87]Who am I? Someone that's afraid to let go, uh <br/> 我是谁？一个害怕被放任自流的人
-[01:19.68]You decide if you're ever gonna let me know (yeah) <br/> 你决定是否让我知道
-[01:22.85]Suicide if you ever try to let go, uh <br/> 如果你想要离开，那我也“走”吧
-[01:26.03]I'm sad, I know, yeah, I'm sad, I know, yeah <br/> 我很难过，我知道，我很悲伤，我明白
-[01:29.24]Who am I? Someone that's afraid to let go, uh <br/> 我是谁？一个害怕被抛弃的人
-[01:32.41]You decide if you're ever gonna let me know (yeah) <br/> 你决定是否让我知道
-[01:35.58]Suicide if you ever try to let go, uh <br/> 如果你想要离开，那我也“走”吧
-[01:38.74]I'm sad, I know, yeah, I'm sad, I know, yeah <br/> 我很难过，我知道，我很悲伤，我明白
-[01:42.05]<br/><br/>
-[02:07.51]Who am I? Someone that's afraid to let go, uh <br/> 我是谁？一个害怕被放任自流的人
-[02:10.86]You decide if you're ever gonna let me know (yeah) <br/> 你决定是否让我知道
-[02:13.97]Suicide if you ever try to let go, uh <br/> 如果你想要离开，那我也“走”吧
-[02:17.02]I'm sad, I know, yeah, I'm sad, I know, yeah <br/> 我很难过，我知道，我很悲伤，我明白
-[02:20.44]Who am I? Someone that's afraid to let go, uh <br/> 我是谁？一个害怕被抛弃的人
-[02:23.53]You decide if you're ever gonna let me know (yeah) <br/> 你决定是否让我知道
-[02:26.82]Suicide if you ever try to let go, uh <br/> 如果你想要离开，那我也“走”吧
-[02:30.03]I'm sad, I know, yeah, I'm sad, I know, yeah <br/> 我很难过，我知道，我很悲伤，我明白<br/> 
-[02:33.70]Rest.In.Peace. <br/> XXXTENTACION
-		</textarea>
-		<div class="music_box">
-			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
-			<div id="jp_container_1" class="jp-audio" style="position:absolute; left:25px; bottom:75px; width:360px; height:160px; z-index:1">
-				<div class="jp-type-single" style="position: absolute; bottom:5px;">
-					<img src="music/headimg.jpg" width=100 height=100 style="position:relative; z-index:2; top:90px; left:15px; border-radius:64px; border: 2px solid #050505;"></img>
-					<div class="music-info" style="position:relative; z-index:2; left:130px; bottom:16px; font-size:12px;">
-						<font size="3" color="#82FDFF">XXXTENTACION - Sad!</font>
-						<br />
-						<font>...</font>
-					</div>
-					<div class="jp-gui jp-interface" style="position:relative; bottom:20px; z-index:1;">
-							<a href="javascript:;" style="position:absolute; left: 310px;" class="jp-play" tabindex="1" title="播放"></a>
-							<a href="javascript:;" style="position:absolute; left: 310px;" class="jp-pause" tabindex="1" title="暂停"></a>
-							<a href="javascript:;" style="position:absolute; left: 260px; top: -5px;" class="jp-stop" tabindex="1" title="停止"></a>
-							<a href="javascript:;" style="position:absolute; left: 25px; top: -7px;" class="jp-mute" tabindex="1" title="静音"></a>
-							<a href="javascript:;" style="position:absolute; left: 25px; top: -7px;" class="jp-unmute" tabindex="1" title="取消静音"></a>
-	
-						<div class="jp-progress" style="position:absolute; top:45px; left:130px;width:170px;">
-							<div class="jp-seek-bar">
-								<div class="jp-play-bar"></div>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo"></div>
+						<div class="content">
+							<div class="inner">
+								<h1>小猫先生</h1>
+								<p>一只懒怠的程序员</p>
 							</div>
 						</div>
-						<div class="jp-volume-bar" style="position:absolute; left:130px; top:10px; width:90px;">
-							<div class="jp-volume-bar-value"></div>
-						</div>
-						<div class="jp-time-holder" style="position:absolute; top:20px; left:130px; width:120px;">
-							<nobr>
-								<div class="jp-current-time"></div>
-								<div class="jp-duration"></div>
-							</nobr>
-						</div>
-					</div>
-				</div>
-				<a href="javascript:;" id="btn_hideandshow" style="position:absolute; left: 361px; top:60px; width: 15px; height: 30px;line-height:30px;text-align:center; background: #009BE3; font-size:12px; z-index:2" title="显示/隐藏面板">
-					<font color="#FFF">≡</font>
-				</a>
-				<div class="footer" style="position:absolute; bottom:5px;left:10px; font-size: 15px; font-weight: 500; text-align: center; letter-spacing: 2px; color: #fff; font-family: 'Questrial', sans-serif;">
-					<span id="footer_text"></span>
-				</div>
-			</div>
-		</div>
-		<div style="position: fixed; left:0px; bottom: 10px; width:100%; height: 45px; z-index:0;">
-			<div style="position: absolute; bottom:10px; width: 100%; height:45px; overflow:hidden; background-color: rgba(0,0,0,.5);">
-			</div>
-				<div class="content">
-					<div style="position:relative; width:100%; bottom:50px;">
-						<ul id="lrc_list">
+						<nav>
+							<ul>
+								<li><a href="#videos">视频</a></li>
+								<li><a href="#blog">博客</a></li>
+								<li><a href="#city">都市传说</a></li>
+								<li><a href="#contact">联系</a></li>
+								<li><a href="#links">链接</a></li>
+								<!--<li><a href="#elements">框架/元素测试</a></li>-->
+							</ul>
+						</nav>
+					</header>
 
-						</ul>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Videos -->
+							<article id="videos">
+								<h2 class="major">Videos</h2>
+								<span class="video main">
+									<iframe id="videoplayer" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+									<section id="novideo" style="position: absolute; width:100%; left: 0px; top:100px; text-align:center;"><h2>没有选中视频</h2> </section>
+								</span>
+								<ul class="actions">
+									<li><a href="javascript:;" onclick="openVideoPage();" class="button primary">前往视频播放页</a></li>
+									<li>
+									<h3>up做视频也不容易的啊，要是不关注至少点个点赞吧！拜托啦，这对来说我真的很重要！</h3</li>
+								</ul>
+								<section>
+									<h3 class="major">我的视频</h3>
+									<ul class="actions autoline">
+										<li><a href="javascript:;" onclick="changeVideo('BV1oZ4y1H7bB');" class="button">sad</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1K5411Y7Bi');" class="button">[pvz]审判长廊演唱会</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1Lz4y1X7Mt');" class="button">[pvz]sans保龄球</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1uz411v7Zi');" class="button">[pvz]僵王审判曲</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1Mz4y197GQ');" class="button">老油条小猫带你走遍百人服</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1JE411A7VK');" class="button">我的世界服务器刷物品bug</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1a741147vP');" class="button">我血条没了！游戏特色…</a></li>
+										<li><a href="https://space.bilibili.com/330771760/video" class="button primary">查看我的更多作品</a></li>
+									</ul>
+								</section>
+							</article>
+
+						<!-- Blog -->
+							<article id="blog">
+								<h2 class="major">M's Blog</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<p>该板块暂无内容</p>
+							</article>
+
+						<!-- The Legends of City -->
+							<article id="city">
+								<h2 class="major">the Legends of City</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p>该板块暂无内容</p>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<ul class="icons">
+									<li><a href="javascript:;" onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=2431208142&site=qq&menu=yes', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');" class="icon brands fa-qq"><span class="label">QQ</span></a></li>
+									<li><a href="https://github.com/MrXiaoM/" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+								<section>
+									<h3 class="major">你也可以通过加入这些QQ群来找到我</h3>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>群名</th>
+													<th>群号</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>生存都市①群 国际</td>
+													<td>241973735</td>
+												</tr>
+												<tr>
+													<td>生存都市②群 - 国际版</td>
+													<td>536138292</td>
+												</tr>
+												<tr>
+													<td>「Mr社」生存都市资源分享群</td>
+													<td>951534513</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+							</article>
+							
+							<article id="links">
+								<h2 class="major">Links</h2>
+								<section>
+									<h3>这个板块主要用来存一些链接</h3>
+									<ul class="actions autoline">
+										<li><a href="https://www.bilibili.com/" target="_blank" class="button"><img width=32 height=32 src="https://www.bilibili.com/favicon.ico" onerror="nofind();"></img> 哔哩哔哩</a></li>
+										<li><a href="https://www.mcbbs.net/" target="_blank" class="button"><img width=32 height=32 src="https://www.mcbbs.net/favicon.ico" onerror="nofind();"></img> MCBBS</a></li>
+										<li><a href="https://minecraft-zh.gamepedia.com/" target="_blank" class="button"><img width=32 height=32 src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/6/64/Favicon.ico" onerror="nofind();"></img> Minecraft Wiki</a></li>
+										<li><a href="http://blog.hakugyokurou.net/?page_id=126" target="_blank" class="button"><img width=32 height=32 src="" onerror="nofind();"></img> MCP&amp;Forge教程 | 白玉楼之梦</a></li>
+										<li><a href="https://zrips.net/Residence/" target="_blank" class="button"><img width=32 height=32 src="https://www.zrips.net/wp-content/uploads/2019/02/cropped-siteIcon-32x32.png" onerror="nofind();"></img> Zrip的领地插件下载站</a></li>
+										<li><a href="https://impactclient.net/" target="_blank" class="button"><img width=32 height=32 src="http://impactclient.net/favicon.ico" onerror="nofind();"></img> Impact Client</a></li>
+										<li><a href="https://www.natfrp.com/" target="_blank" class="button"><img width=32 height=32 src="https://www.natfrp.com/favicon.ico" onerror="nofind();"></img> Sakura Frp</a></li>
+										<li><a href="https://blackspigot.com/downloads/wdl-undetectable-cracked-antiwdl-bypass.4360/" target="_blank" class="button"><img width=32 height=32 src="https://blackspigot.com/favicon.ico" onerror="nofind();"></img> WDL Cracked | BlackSpigotMC</a></li>
+										<li><a href="https://api.extendedclip.com/all/" target="_blank" class="button"><img width=32 height=32 src="https://api.extendedclip.com/static/favicon-32x32.png" onerror="nofind();"></img> PAPI eCloud</a></li>
+										<li><a href="https://maoudamashii.jokersounds.com/" target="_blank" class="button"><img width=32 height=32 src="https://maoudamashii.jokersounds.com/favicon.ico" onerror="nofind();"></img> 全曲無料・フリー音楽素材/魔王魂</a></li>
+										<li><a href="http://www.pds.ink/" target="_blank" class="button"><img width=32 height=32 src="https://i.loli.net/2018/03/10/5aa3402987980.png" onerror="nofind();"></img> 生存都市 | 热闹~百人同服游戏！</a></li>
+										<li><a href="https://saucenao.com/" target="_blank" class="button"><img width=32 height=32 src="https://saucenao.com/favicon.ico" onerror="nofind();"></img> SauceNAO 图片搜索引擎</a></li>
+										<li><a href="https://space.bilibili.com/6823116/album" target="_blank" class="button"><img width=32 height=32 src="https://i1.hdslb.com/bfs/face/af980d49205f4661f68ad2a09161c1da11d09483.jpg_32x32.jpg" onerror="nofind();"></img> 哔哩哔哩 壁纸娘</a></li>
+										<li><a href="https://www.mrxiaom.top/games/susie_badtime/play.html" target="_blank" class="button"><img width=32 height=32 src="https://www.mrxiaom.top/icons/SusieBadTime.png" onerror="nofind();"></img> Susie的坏时光</a></li>
+										<li><a href="https://www.mrxiaom.top/games/mikutap/play.html" target="_blank" class="button"><img width=32 height=32 src="https://www.mrxiaom.top/icons/mikutap-icon.png" onerror="nofind();"></img> Mikutap</a></li>
+									
+									</ul>
+								</section>
+							</article>
+							
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
 					</div>
-				</div>
-		</div>
-		<div style="position:fixed; z-index:10; bottom: 5px; right:5px;">
-			<!--
-			<font color="#00FFFF">最近东少的圣灵服务器又开启啦!<br/>点击左上角的“圣灵服务器”查看吧~<br/>为什么我要写这段…因为服务器是我管理的 -v-</font>
-			<!---->
-		</div>
-		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-		<script type="text/javascript" src="js/lrc.js"></script>
-		<script type="text/javascript" src="js/jquery.jplayer.js"></script>
-		<style>#mask{display:none;}</style>
-		<script>
-			
-			function RndNum(max){
-				var rnd=Math.floor(Math.random()*max);
-				return rnd;
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; <a href="https://www.mrxiaom.top">bilibili_Xiao_M</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			var bvid = '-1';
+			function changeVideo(bv){
+				bvid=bv;
+				document.getElementById("videoplayer").src='https://player.bilibili.com/player.html?bvid='+bv+'&page=1';
+				document.getElementById("novideo").style = 'display: none;';
 			}
-			
-			var i = 0;
-			var frame = 1;
-			
-				var signtext = "";
-				var signs=new Array();
-				signs[0]="技术宅拯救世界！";
-				signs[1]="想象出一个没有你却能正常运作的世界?!…";
-				signs[2]="解决任何问题都不看崩溃日志相当于闭眼开车";
-				signs[3]="实验记录 - 17";
-				signs[4]="保守承诺";
-				signs[5]="I'm sad, I know, yeah, I'm sad, I know, yeah";
-				signs[6]="java.lang.NullPointerException";
-				signs[7]="到哔哩哔哩关注我吧~";
-				signs[8]="━v━";
-				signs[9]="在现实中唯唯诺诺，在网络中… 也唯唯诺诺";
-				signs[10]="";
-				/* ============== [ WARNING START ] ============= */
-				signs[11]="起初，那只是一名玩家的消失";
-				signs[12]="只是一个团伙的莫名解散";
-				signs[13]="但谁又在乎呢?"
-				signs[14]="直到「它」真正被引起注意的时候";
-				signs[15]="一切，都晚了，世界的秩序将被破坏";
-				/* =============== [ WARNING END ] ============== */
-				
-				signtext = signs[RndNum(10)];
-				$('#sign_me').text(signtext);
-		
-				$("#jquery_jplayer_1").jPlayer({
-					play: function(event) {
-						//点击开始方法调用lrc.start歌词方法 返回时间time
-						$.lrc.start($('#lrc_content').val(), function() {
-							return time;
-						});
-					},
-					ready: function (event) {
-						$(this).jPlayer("setMedia", {
-							mp3:"http://music.163.com/song/media/outer/url?id=542667209.mp3" //Rest.In.Peace.
-						}).jPlayer("mute").jPlayer("play").jPlayer("unmute");
-					},
-					timeupdate: function(event) {
-						if(event.jPlayer.status.currentTime==0){
-							time = "";
-							$.lrc.start($('#lrc_content').val(), function() {
-								return time;
-							});
-						}else {
-							time = event.jPlayer.status.currentTime;
-						}
-					},
-					ended:function(event){
-						$(".jp-play").click();
-					},
-					swfPath: "/js", solution:"html, flash", supplied: "mp3", wmode: "window"
-				});
-				var box = document.getElementById("jp_container_1");
-				var btn = document.getElementById("btn_hideandshow");
-				btn.onclick = function() {
-					if (box.style['left'] == "25px") {
-						$("#jp_container_1").animate({left:'-310px'},"slow");
-					} else {
-						$("#jp_container_1").animate({left:'25px'},"slow");
-					}
-				};
-		</script>
+			function openVideoPage(){
+				if(bvid!='-1'){
+					window.open("https://www.bilibili.com/video/"+bvid);
+				}
+				else{
+					alert("请先选中视频");
+				}
+			}
+			</script>
 	</body>
 </html>
