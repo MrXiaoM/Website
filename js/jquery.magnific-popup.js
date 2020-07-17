@@ -2039,9 +2039,9 @@ $.magnificPopup.registerModule(RETINA_NS, {
 })();
 $(function () {
 	if(new Date().getFullYear() != "2019") {
-		$("#footer_text").html("&copy; 2019-" + new Date().getFullYear() + " <a href=\"https://www.mcxiaom.top\" >Mr_Xiao_M</a>");
+		$("#footer_text").html("&copy; 2019-" + new Date().getFullYear() + " <a href=\"https://www.mrxiaom.top\" >Mr_Xiao_M</a>");
     }else{
-	    $("#footer_text").html("&copy; " + new Date().getFullYear() + " <a href=\"https://www.mcxiaom.top\" >Mr_Xiao_M</a>");
+	    $("#footer_text").html("&copy; " + new Date().getFullYear() + " <a href=\"https://www.mrxiaom.top\" >Mr_Xiao_M</a>");
 	}
 })
 /*>>fastclick*/
