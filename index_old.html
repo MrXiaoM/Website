@@ -1,0 +1,785 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>个人主页 - 小猫先生</title>
+		<link rel="icon" href="favicon-16x16.png" sizes="16x16"/>
+		<link rel="icon" href="favicon-32x32.png" sizes="32x32"/>
+		<link rel="icon" href="favicon.png" sizes="48x48"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function nofind(){  
+				var img=event.srcElement;  
+				img.src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUMSURBVGhD7VrNK3RfHP+Od8bbjNfIW2wIhUwkUYqtsrIVCynZKOyw8BQLJCnNhq35I8SKBVlYyAaJkpJ3wvmdz7e5uua5c894fjOeee7Mpz7dud9z5t7zOed7Xu45X5sQgiIJMd5rxCAq2OqIOMEBD1qTk5Nib2+PfyckJNDt7S09Pz9TcnIy28zw9vZGNpvtkzExMV/uwaenJ85bUFBAdXV1NDIyYmNDsAHBKra3t4usrCwhCyakQJGYmCgyMzP5CpusAFMmJSWZEsXIy8vjZ6WlpfF9dna2GBsbk683LtOfUtnCExMTwuPx0OnpKcnCkBRJd3d33Crv7+/cWqAZXl9fvb+MgdaVFcrecn5+TlI8fXx80P39Pbf48PAwDQ0NBaXFlYKle4n9/X1KSUmhgYEBamhooNjYWBaM/8bFxXlz+gf+awZ0jZeXF3p4eKDBwUEWjkqA6NTUVMrIyKDZ2Vnq7e39/6K1pvbHoqIidrWysjJ5a5wnmMR7pEh268bGRu4Sdrud79fW1mQW4/8FSuUoDRd2OBxKtwwW0D3gNeDOzo6turqa7fCqmZkZ+vXrl7lLqmBUC3pWVFRwLcsCyFvjPMEkPArFgldpto6ODpGfn892lGV+fv4z7bs0NOpZXl7OI7OsYXlrnCeYRAXHx8ezOL3d6XQKlEUOYpy2uLj4JT1QGhr1rKysZMG+BQgV8R45SImcnBx5+zUNttzcXFFSUsItvb6+/lseFQ2NekIwWhcDh29aKIj3YX7HvOybBjY3N3PlQzSuc3Nz0vx7Pn80NOr504I1IWhB3zSNcmrkPBhXMJL7ppsx7NbSmBUAzMH+MDo6Si0tLbzE3d3dpdbWVlRAQAg7wVhwyH7K6++pqSnhdrvFysoKC1paWhLLy8sCU5fL5aLCwkJKT0+n7e1twiDGD1DBqNn1/GmXxnRUU1PDAxeKhxEbNrgvpiaURQpml0c60jCCt7W1yb8bP1PPsGthFOri4oKXlIAUTPIDg5eyWPxg/Y6lqrYQKi4u5vTNzU2+V0G5lq6qqhJHR0f8ULmYD80nmw5yvS7Ozs64D8tpiD9YUEbZsnR5ecnrbnw+Hh8f09XVFaFssKMipLtjLW5eRq2p/fGnXfq77OrqYtcuLS0V4+Pj0mScT2PYufR3IZei/DWFz1etG5jhnxcMmE1hvrCMYLgrBjYVLCEYAxYQUYJ5QFJsNQHRFv4XoQ1aESP4O7CEYKzCsAeGXU8Voi1sdUQFWx1RwVZHVLDVERVsdUQFWx1RwVZHVLAvtO2TQL41/wZw6IbvYVwDiUNRCsZpHo47VKFHfws4PcTWDuK8sCGvglIwHnZzc0OPj49eS3jh8PCQY7ywY4mdSxWUgnHojHPYiooKryW8UFtby9fr6+uATiCUgtE3EA6IU7twxMnJyWeoot1u91r9Q3lc6nK5xMHBAfeV/v5+qq+vZ/eBq4PYPEOlhBLd3d02j8cjenp6vuzDIqBldXWVj0sR3et2u6mvr898rxaCzTg9Pc1HkVIchwQ6HA4+PsXJPE7itRP6UFJWNh+J6okIAUTc4oryNDU1yeIaa9DT0OjLzs5ODiNC2AHOiRFWhPBhhP5CdKgJgXg3hEMgQoy12DFcEay2sLAgi2pcfj2VLq0B4X5bW1vcZ+DCiLZBVABCEhBOHGpI4dx9ZIt/hj5gunQ6nbSxsaE+cvAiYMFWgXKUthqigq2OCBNM9B+RbZfwl8HGeAAAAABJRU5ErkJggg==";
+				img.onerror=null;
+			}
+		</script>
+		<style>
+		
+		#loading {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			background-image: url("images/loading.gif");
+			background-size: auto, 256px 256px;
+			background-position: center, center;
+			background-repeat: no-repeat,  repeat;
+			z-index: 666;
+		}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="loading"></div>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo"></div>
+						<div class="content">
+							<div class="inner">
+								<h1>小猫先生</h1>
+								<p>一只懒怠的程序员</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#videos">视频</a></li>
+								<li><a href="#publicInfo">资料</a></li>
+								<li><a href="#city">都市传说</a></li>
+								<li><a href="#contact">联系</a></li>
+								<li><a href="#links">链接</a></li>
+								<!--<li><a href="#elements">框架/元素测试</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Videos -->
+							<article id="videos">
+								<h2 class="major">Videos</h2>
+								<span class="video main">
+									<iframe id="videoplayer" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+									<section id="novideo" style="position: absolute; width:100%; left: 0px; top:100px; text-align:center;"><h2>没有选中视频</h2> </section>
+								</span>
+								<ul class="actions">
+									<li><a href="javascript:;" onclick="openVideoPage();" class="button primary">前往视频播放页</a></li>
+									<li>
+									<h3>up做视频也不容易的啊，要是不关注至少点个点赞吧！拜托啦，这对来说我真的很重要！</h3</li>
+								</ul>
+								<section>
+									<h3 class="major">我的视频</h3>
+									<ul class="actions autoline">
+										<li><a href="javascript:;" onclick="changeVideo('BV1oZ4y1H7bB');" class="button">sad</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1K5411Y7Bi');" class="button">[pvz]审判长廊演唱会</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1Lz4y1X7Mt');" class="button">[pvz]sans保龄球</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1uz411v7Zi');" class="button">[pvz]僵王审判曲</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1Mz4y197GQ');" class="button">老油条小猫带你走遍百人服</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1JE411A7VK');" class="button">我的世界服务器刷物品bug</a></li>
+										<li><a href="javascript:;" onclick="changeVideo('BV1a741147vP');" class="button">我血条没了！游戏特色…</a></li>
+										<li><a href="https://space.bilibili.com/330771760/video" class="button primary">查看我的更多作品</a></li>
+									</ul>
+								</section>
+							</article>
+
+						<!-- Data -->
+							<article id="publicInfo">
+								<h2 class="major">Public Information</h2>
+								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<section>
+									<blockquote>本板块仅为生存都市国际版的资料</blockquote>
+									服务器名称: <code>生存都市</code><br/>
+									经营者/服主: <code><a href="#human-thebird">小鸟</a></code><br/>
+									服务端版本: <code>1.8 / HexaCord+Spigot</code><br/>
+									服务器IP: <code><a href="https://www.mclists.cn/server/mc.66ko.cc_25565.html" target="_blank">mc.66ko.cc</a></code><br/>
+									服务器官方网站: <code><a href="http://www.pds.ink/" target="_blank">www.pds.ink</a></code><br/>
+									周年庆: <code>8月16日</code><br/>
+									开放权限者(OP): <code><a href="#human-thebird">The_bird</a>, <a href="#human-mima0">mima0</a></code><hr/>
+								
+									<h3 class="major">服务器情况</h3>
+									列表中的状态含义如下<br/>
+									<code>A:正常运营</code><br/>
+									<code>C:已停服</code><br/>
+									<code>H:存在挂机区域</code><br/>
+									<code>B:仍有被记录但未处理的BUG</code><br/>
+									<code>M:有mcMMO技能插件</code><br/> 
+									<code>不宜展示的额外状态将用*代替</code><br/><br/>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>状态</th>
+													<th>服区</th>
+													<th>包含子服</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>A</td>
+													<td>登入服/大厅服</td>
+													<td>lobby, test</td>
+												</tr>
+												<tr>
+													<td>AH*B</td>
+													<td>经典生存</td>
+													<td>sc, ss, zy, afkgjsc</td>
+												</tr>
+												<tr>
+													<td>AH*B</td>
+													<td>经典空岛</td>
+													<td>kd, afkgj</td>
+												</tr>
+												<tr>
+													<td>CB</td>
+													<td>空岛二服/荣耀空岛/酸性海岛</td>
+													<td>kk, <del>test</del></td>
+												</tr>
+												<tr>
+													<td>AH*BM</td>
+													<td>钻石大陆</td>
+													<td>zd, zdss, fbqy, afkgjzd</td>
+												</tr>
+												<tr>
+													<td>CB</td>
+													<td>末日生存</td>
+													<td>mrsc, ... (剩余数据已遗失)</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+							</article>
+
+						<!-- Human-The_Bird -->
+							<article id="human-thebird">
+								<a href="#publicInfo">← 返回「现可公开的资料」</a><br/>
+								<h2 class="major">人类信息</h2>
+								<img src="https://www.mcbbs.net/uc_server/avatar.php?uid=1856903" width="128px" height="128px" style="border-radius:64px"/>
+								<section>
+								对象名称: <code>小鸟</code><br/>
+								Minecraft账户名: <code><a href="https://namemc.com/profile/The_bird" target="_blank">The_bird</a></code><br/>
+								Mcbbs账户名: <code><a href="https://www.mcbbs.net/home.php?mod=space&uid=1856903" target="_blank">NeverC</a></code><br/>
+								QQ号: <code>2495279104</code> / <code>3337650395</code> / <code>2480371273</code><br/>
+								简介: <br/>
+								<code>生存都市服务器服主，鸽子</code>
+								</section>
+							</article>
+							
+						<!-- Human-mima0 -->
+							<article id="human-mima0">
+								<a href="#publicInfo">← 返回「现可公开的资料」</a><br/>
+								<h2 class="major">人类信息</h2>
+								<img src="http://q1.qlogo.cn/g?b=qq&nk=2914705387&s=640" width="128px" height="128px" style="border-radius:64px"/>
+								<section>
+								对象名称: <code>与天c</code> / <code>永远的白衣少年</code><br/>
+								Minecraft账户名: <code><a href="https://namemc.com/profile/mima0" target="_blank">mima0</a></code><br/>
+								QQ号: <code>2914705387</code><br/>
+								简介: <br/>
+								<code>
+									生存都市服务器中的一位神秘的管理员<br/>
+									长期不上线
+								</code>
+								</section>
+							</article>
+							
+							
+						<!-- The Legends of City -->
+							<article id="city">
+								<h2 class="major">the Legends of City</h2>
+								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<section>
+								<center>本板块用来记录生存都市内<b>真实发生</b>的奇闻异事<br/>
+								所有人都可以踊跃向站长投稿故事</center><br/>
+								</section>
+								<!-- 复读机 START -->
+								<h3 class="major">复读机 | <a href="javascript:;" onclick="foldContext('citystory-001');">折叠/展开内容</a></h3>
+								<section style="overflow: hidden; height: auto;" id="citystory-001">
+								用户名 <code>TRepeater1</code><br/>
+								在2020年春节后悄然上线。只要向它私聊信息，它就会把信息在公屏上说一遍。<br/>
+								首次登台，就受到都市各路玩家的欢迎
+								
+								据说复读机初次亮相时，其他人可以对复读机为所欲为，执行游戏内指令。不过很快，复读机开始拒绝游戏指令。<br/>
+                                <code>2020年3月</code>前后，有人操作复读机辱骂服主，<br/>
+								导致复读机在生存（住宅1区/主城）被封禁（可用/seen TRepeater1 检验）。<br/><br/>
+								
+								此后，复读机转战祖安大陆。<br/><br/>
+								
+								祖安大陆的人们操控着复读机，让复读机带上了祖安的烟火味。<br/>
+								也就是在那时，复读机学会了两门学问：【祖安】和【GHS】。<br/>
+								<blockquote>“快拔出来啦！会怀小宝宝哒！”“***”</blockquote>
+								成了复读机的名言。<br/>
+								也就是在这段时间，复读机突然声称，自己的主人是猫娘。<br/>
+								有人因此猜测：Mr_Xiao_M是复读机的主人。<br/>
+								但这样的猜测站不住脚——Mr_Xiao_M那时远离生存都市，<br/>
+								一心只读圣贤书，没有制造复读机的时间；而他本人回归后，也否定了这一点。<br/><br/>
+								
+								<code>就是嘛，咱刚回来的时候还懵逼<br/>“啥时候来了个复读机”</code><br/><br/>
+								
+								<code>2020年5月</code>，复读机厌倦了复读，转而在大厅当起了播报员。<br/>
+								最初，复读机只盯着服主，在服主进入大厅的时候，喊一句：<br/>
+								“服主上线啦！记得修复生存动物消失Bug！”<br/>
+
+								后来，复读机开始接受其他玩家的播报请求，原本因各地陆续开学而冷清都市变得热闹了起来。<br/>
+								突然，复读机归于沉寂，沉寂了一月有余。<br/><br/>
+								
+								复读机的回归，如同复读机的沉寂一般，安静，而又神秘。<br/>
+								没有人知道复读机为何沉寂，也没有人知道复读机为何回归。<br/>
+								人们只知道，它依旧像往常那样，在一些玩家进入服务器时播报着：<br/>
+								“xxx进入了大厅服！”<br/>
+								<code>就像一堆冰冷机械</code><br/><br/>
+
+								6月之末，7月之初，一位改变了复读机的男人，出现了。<br/>
+								那个男人的用户名叫做“Winner_dada”，他向复读机提出了不情之请：<br/>
+								“在我的名字前面加上‘钻大帅逼’这几个字。”<br/>
+								他的请求得到了复读机的响应。<br/>
+								他因拥有“钻大帅逼”的名号而欣喜若狂（？）。<br/>
+								他不知道的是，他的不情之请引燃了生存都市玩家定制进服播报的热情。<br/><br/>
+								
+								从那天开始，复读机偶尔会响应玩家定制播报信息的请求。<br/>
+								想要定制播报信息，你得逮住复读机主人在线的时机。而复读机主人的活动规律，始终是一个谜。<br/>
+								这些请求，从“钻大帅逼”头衔，到没有后缀的“饭桶白染来找吃的了！”，<br/>
+								只要播报内容可以在大厅服正常发送并广播（喊话），复读机似乎都能胜任。<br/><br/>
+
+								2020年7月11日，生存服的恶意破坏者Bo_er被服主永久封禁，<br/>
+								复读机（的主人）似乎也收到了感召，在那一天接受了许多玩家的定制请求。<br/><br/>
+								
+								
+								“我们仍未知道，复读机的主人究竟是谁。”<br/><br/>
+								<blockquote>
+								天知道复读机的主人在想什么，也许他会改造复读机，或者干脆关掉它？<br/>
+								所以，这个板块（即使只写复读机传记也）是活的板块。
+								</blockquote>
+							    </section>
+								<!-- 复读机 END -->
+								<!-- 实验记录11 START -->
+								<h3 class="major">实验记录11 | <a href="javascript:;" onclick="foldContext('citystory-002');">折叠/展开内容</a></h3>
+								<section style="overflow: hidden; height: auto;" id="citystory-002">
+								在<code>2020年2月</code>的尾声，咱在废墟中找到了一台破败的机器<br/>
+								好在的是，它的设计图还完整，材料也好收集，<br/>
+								只不过…它的力量很有可能不是咱可以掌控的<br/><br/>
+								
+							    但咱还是照着设计图，把它在一个偏僻的地方修建完成了<br/><br/>
+								
+								<code>咱把机器开启了</code><br/>
+								让咱没有想到的是，它拥有控制部分区域时间的能力，在咱离开之后<br/>
+								东西全部复原了…<br/>
+								这让咱心生歹意，立刻关掉机器，把所有值钱的东西当作赌注放在这里<br/>
+								之后，咱等待机器提示存档完成之后，把所有东西又放了回去<br/>
+								开启机器，成功了，成功了！所有值钱的东西，都利用<code>时间机器</code>复制了一份<br/><br/>
+								
+								<code>人类的贪婪，是永无止境的</code><br/><br/>
+								
+								得到了一点，就想得到更多。咱开始疯狂对任何东西进行复制<br/>
+								但最后的最后，这又有什么意义呢?<br/><br/>
+								
+								<code>2020年3月14日</code>咱的行为，最终还是受到了制裁。<br/>
+								安全组织对咱发布了<br/>
+								<code>【关于玩家 Mr_Xiao_M 利用bug的处罚】</code><br/>
+								同时摧毁了咱的机器，<strong>丝毫不剩</strong><br/>
+								这也为咱的这次实验，画上了一个句号。<br/><br/>
+								
+								<blockquote>咱叫 Mr_Xiao_M，请多加小心</blockquote>
+								
+							    </section>
+								<!-- 实验记录11 END -->
+								<!-- 信件 START -->
+								<h3 class="major">信件 | <a href="javascript:;" onclick="foldContext('citystory-003');">折叠/展开内容</a></h3>
+								<section style="overflow: hidden; height: auto;" id="citystory-003">
+								<center>写给都市人的最后一封信</center>
+								“亲爱”的都市玩家：<br/>
+								你们好，几个月过去了，我们又又又见面了，<br/>
+								我这次来只是想告诉你们，我已经做好了正式退服(不是退游，我也不可能退游)的准备了。<br/>
+								在2020年2月-3月一个月的痛苦经历后，我真的厌倦了这里的氛围了：<br/>
+								服务器里，玩家们是真的“无所不为”。<br/>
+								<blockquote>无情的抽奖、疯狂的砸箱子、愚蠢的贱贱乐,还有那些可怜的苦力、昏庸无能的服主......</blockquote>
+								不过，我早已对你们服务器里的“良好风度”习以为常了。<br/>
+								那是多么可怕而又无趣的黑历史啊......<br/>
+								曾经我为只是为了那些神器，就整整花费了我1个多月的时间，想来就心酸......<br/><br/>
+								
+								<code>有一说一朋友，肝神器咱最长时间也就1星期，</code><br/>
+								<code>你用了一个月… 你的运气太差了吧</code><br/><br/>
+								
+								就感觉自己像个21世纪的祥子，为了自己的生活拼命赚金币：<br/>
+								<ul>
+									<li>第一次拿女巫头换20000金币，结果只用了10000，剩下的全被抽奖骗走了；</li>
+									<li>第二次我竟然傻到拿豹猫头换一把苦痛蛛剑，结果电脑一崩，蛛剑没了；</li>
+									<li>最后，我好不容易肝了800积分换的金色光芒，卖了10w，买了一把冬日雪铲和一把冰封之怒，<br/>
+									但最气的是小鸟竟然说我打空岛开瓜，把我封了......</li>
+								</ul>
+								
+								<code>你才不像祥子，也不是服里穷苦玩家的影子</code><br/>
+								<code>你就是太悲观，不懂得看向服里美好的景象</code><br/><br/>
+								
+								前面两个我可以忍，但是这最后一个，龙子可真的不能再忍了!<br/>
+								整整花了龙子一个月的时间才肝到的神器，你拖马就给龙子全都扔进腊吉通......<br/>
+								你还说龙子打空岛开瓜，我就火了，龙子都懒得开瓜，<br/>
+								自己是笔记本电脑，打着没多久就你么崩，开个瓜肯定连电脑都打不开!!!<br/>
+								你们肯定暗暗骂我活该，我可无所谓......<br/>
+								莫名其妙!失去服主对我的信任，这才是我这一个月来最大的损失!!!<br/><br/>
+								
+								<code>你猫哥又要来说句话了啊:</code><br/>
+								<code>你看你猫哥，瞒着小鸟刷过物品，开过挂，</code><br/>
+								<code>被发现了不还是跟小鸟相处得好好的</code><br/>
+								<code>虽然你猫哥不一样是为都市做过贡献的猫仔</code><br/><br/>
+								
+								不过，我发誓龙子绝对是清白的，虽然我知道现在费再多口舌小鸟也不会来的，<br/>
+								但经过这几个月来的查询，我相信，这绝对不是封错了的原因！我敢肯定一定是有人故意下黑手的!!!<br/>
+								我得让你们知道，一个老玩家的尊严是不可随意践踏的!!!<br/>
+								我们老玩家可不是软柿子!!!你们终究会付出代价!!!<br/>
+								难道你们就因为那愚蠢的神器而迷失了自己的方向吗!?<br/>
+								难道都市人就是像那个被封的可怜人一样，<br/>
+								为了那些神器而浪费自己宝贵的时间吗!?<br/><br/>
+								
+								<code>有一说一朋友，神器一般来说有一把主用的就行了</code><br/>
+								<code>要其他神器只是图着它新鲜，想搞来玩</code><br/>
+								<code>“人类总会对新鲜的事物感兴趣”</code><br/>
+								<code>咱现在王者、轩辕，什么新神器没有？还不是只喜欢用狂暴雷剑</code><br/><br/>
+								
+								你们难道就愿意为了花你们辛辛苦苦挣来的金币去赌博，而不是攒着建一个自己的商店吗!?<br/>
+								朋友们啊，生存都市的金币真的不好挣，我说实话，都市真的一点都不好！<br/>
+								资源区基本不会天然刷怪，就算是刷怪笼也不怎么赚钱，因为怪物的掉落物都不好卖出去，<br/>
+								那些玩了比较久的都市人，应该都清楚，做生意不是看你不想要什么就卖什么，而是别人要什么你就卖什么!<br/>
+								（如果别人要的你也要就尽量不卖出去）<br/>
+								但怪物的掉落物，别人也不会买，因为他们都会自己刷，基本不会买。<br/>
+								（可能没什么都市人知道，腐肉可以找牧师村民换绿宝石）<br/>
+								但有些人，他们不知道真正的经营之道，就用抽奖、砸箱子、贱贱乐骗钱！！！<br/><br/>
+								
+								<code>明知赌博很容易慈善还赌博那就叫贪心，咱觉得玩家贪心导致亏钱是自己活该</code><br/><br/>
+								
+								朋友们，牢牢记住，生存都市的金币真的不好挣！！！<br/>
+								天下没有免费的午餐，抽奖纯粹只是为了骗钱，自己有手，为什么不去赚钱！？<br/>
+								但人性是很可怕的，一个人用抽奖骗到钱，就有一群人跟着骗钱，<br/>
+								这么一来，骗钱的人多了，都市氛围自然就不好了......<br/>
+								但是有些所谓的“资本家”，他们有钱，东西都不缺，他们缺的就是时间！！！<br/>
+								最可悲的是，都市的金币是很可怕的！在都市里，钱可真能使“鬼”推磨啊！<br/>
+								那些“资本家”没有时间做大工程，你猜咋的，他们竟然让玩家做苦力！！！<br/>
+								“资本家”让苦力做的最简单的事情就是铺地板、墙和天花板，在痛苦一点的，就是撸土......<br/><br/>
+								
+								<code>然而这些东西都可以通过外挂实现，根本不需要人类来动手</code><br/>
+								<code>没有技术力比穷得当苦力更可怕</code><br/><br/>
+								
+								干苦力这是我最痛恨的赚钱方式，苦力们竟然宁愿花那么多的时间，才赚了那些钱，对于那些神器也只是一点点:<br/>
+								反正买不起神器，又不想买那些乱七八糟的东西，干脆拿去抽奖......<br/>
+								这还是什么生存都市啊！！！生存都市还有那份“都市风”吗！？<br/>
+								我不是针对这里，而是你们的所作所为已经让我无法忍受了......<br/>
+								如果你们想继续堕落下去的话，就直接把这些当fp算了，<br/>
+								你们继续去过着那痛苦的日子吧，你们迟早会意识到的！<br/>
+								至于我嘛，你们可以把我当做都市的敌人，你们把我封了，<br/>
+								我还能再去其他服务器。呵呵，你封我这个账户我也无所谓，反正我已经不在生存都市了，<br/>
+								现在我在****过着养老的日子，你们想来就随便，说不定我还会帮你......<br/>
+								但不管怎样，你们就好好享受你们“愉快”的时光吧！！！
+                                
+								<blockquote>你们服务器曾经存在但现在已经一去不复返的玩家 xbm</blockquote>
+								
+								<code>本章节的<a href="http://www.pds.ink/forum.php?mod=viewthread&tid=2334&fromuid=49398" target="_blank">信件</a>由玩家<s>xbm</s>编写，因其已退服，站长把它搬了过来，</code><br/>
+								<code>他敢有意见吗？如果按照信件里的内容，他可不敢对大佬有意见</code><br/>
+								<center>哈，难道不是吗?</center>
+								</section>
+								<!-- 信件 END -->
+								<!-- 羊毛脱销事件 START -->
+								<h3 class="major">羊毛脱销事件 | <a href="javascript:;" onclick="foldContext('citystory-004');">折叠/展开内容</a></h3>
+								<section style="overflow: hidden; height: auto;" id="citystory-004">
+								
+								<code>都市社8月18日电</code> 生存都市四周年庆活动如火如荼，<br/>
+								活动所需兑换材料的需求量因此猛增。许多商店依靠出售兑换材料及相关原材料得到了数量可观得金币与客流。<br/>
+								位于破碎大道二期路段的“UMR羊毛商店”（UMRWoolshop）就是这些商店之一。<br/><br/>
+
+								<code>“就很突然，我昨天一上号，就收到了商店里白色羊毛售罄的消息。”</code><br/>
+								当记者希望店主描述当时场景的时候，店主——也就是玩家UMRnInside，显得有些惊讶。<br/>
+								<code>“平常来我这边买羊毛的人不多，下大宗订单的人也没几个。但是，我昨天补货的时候，看到羊毛商店门前，哇——一大群人！还有人要一次订购十五大箱白色羊毛！”</code><br/>
+								面对如此庞大的需求，羊毛商店仍然表现出了不俗的供应能力。<br/>
+								当记者询问羊毛的来源时，店主回答：<br/>
+								<code>“我几个月前认识了一位养了上百只羊的玩家，羊毛就是从他养的羊身上剪下来的。当然，我使用了一些自动化技术。”</code><br/>
+								当记者提及那位订购十五大箱白色羊毛的客户时，店主表示：<br/>
+								他已经完成了订单，羊毛也已经被取走。<br/>
+								记者追问，店主却表示，<br/>
+								不知道这些数额如此庞大的羊毛的具体用途，也不会透露该客户的个人信息。<br/>
+								截至发稿，该店店主已经出售了数万立方米的羊毛，并获利至少18万金币。<br/><br/>
+								以上内容来自<a href="http://www.pds.ink/forum.php?mod=viewthread&tid=2375&fromuid=49398" target="_blank">【都市新闻】白色羊毛脱销，一玩家怒赚十八万金币！</a><br/><br/>
+								根据都市情报局提供的情报，本次周年活动在每个子服完成所有兑换任务<br/>
+								都可以获得8点券，而在活动服再完成一次打怪任务(5只小怪)，即可获得3点券<br/>
+								所以站长估测，大量收购这些活动物品的目的是为了开小号来“刷”点券<br/>
+								毕竟只有够10点券才能转出到别的账户上，<br/>
+								只要开多个小号来获取点券全部转到大号，就能大量白嫖点券了<br/>
+								这种便宜谁不想占呢? 这也许是<a href="#human-thebird">服主</a>的一个错误
+								</section>
+								<!-- 羊毛脱销事件 END -->
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<ul class="icons">
+									<li><a href="javascript:;" onclick="javascript:window.open('http://wpa.qq.com/msgrd?v=3&uin=2431208142&site=qq&menu=yes', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no');" class="icon brands fa-qq"><span class="label">QQ</span></a></li>
+									<li><a href="https://github.com/MrXiaoM/" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+								<section>
+									<h3 class="major">你也可以通过加入这些QQ群来找到我</h3>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>群名</th>
+													<th>群号</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>生存都市①群 国际</td>
+													<td>241973735</td>
+												</tr>
+												<tr>
+													<td>生存都市②群 - 国际版</td>
+													<td>536138292</td>
+												</tr>
+												<tr>
+													<td>「Mr社」生存都市资源分享群</td>
+													<td>951534513</td>
+												</tr>
+												<tr>
+													<td>萌星大佐的外纪蕉♂流群</td>
+													<td>252631851</td>
+												</tr>
+												<tr>
+													<td>mengxing的后宫</td>
+													<td>1058673993</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+							</article>
+							
+							<article id="links">
+								<h2 class="major">Links</h2>
+								<section>
+									<h3>这个板块主要用来存一些链接</h3>
+									<ul class="actions autoline">
+										<li><a href="https://www.bilibili.com/" target="_blank" class="button"><img width=32 height=32 src="https://www.bilibili.com/favicon.ico" onerror="nofind();"></img> 哔哩哔哩</a></li>
+										<li><a href="https://www.mcbbs.net/" target="_blank" class="button"><img width=32 height=32 src="https://www.mcbbs.net/favicon.ico" onerror="nofind();"></img> MCBBS</a></li>
+										<li><a href="https://minecraft-zh.gamepedia.com/" target="_blank" class="button"><img width=32 height=32 src="https://gamepedia.cursecdn.com/minecraft_zh_gamepedia/6/64/Favicon.ico" onerror="nofind();"></img> Minecraft Wiki</a></li>
+										<li><a href="http://blog.hakugyokurou.net/?page_id=126" target="_blank" class="button"><img width=32 height=32 src="" onerror="nofind();"></img> MCP&amp;Forge教程 | 白玉楼之梦</a></li>
+										<li><a href="https://zrips.net/Residence/" target="_blank" class="button"><img width=32 height=32 src="https://www.zrips.net/wp-content/uploads/2019/02/cropped-siteIcon-32x32.png" onerror="nofind();"></img> Zrip的领地插件下载站</a></li>
+										<li><a href="https://impactclient.net/" target="_blank" class="button"><img width=32 height=32 src="http://impactclient.net/favicon.ico" onerror="nofind();"></img> Impact Client</a></li>
+										<li><a href="https://www.natfrp.com/" target="_blank" class="button"><img width=32 height=32 src="https://www.natfrp.com/favicon.ico" onerror="nofind();"></img> Sakura Frp</a></li>
+										<li><a href="https://blackspigot.com/downloads/wdl-undetectable-cracked-antiwdl-bypass.4360/" target="_blank" class="button"><img width=32 height=32 src="https://blackspigot.com/favicon.ico" onerror="nofind();"></img> WDL Cracked | BlackSpigotMC</a></li>
+										<li><a href="https://api.extendedclip.com/all/" target="_blank" class="button"><img width=32 height=32 src="https://api.extendedclip.com/static/favicon-32x32.png" onerror="nofind();"></img> PAPI eCloud</a></li>
+										<li><a href="https://maoudamashii.jokersounds.com/" target="_blank" class="button"><img width=32 height=32 src="https://maoudamashii.jokersounds.com/favicon.ico" onerror="nofind();"></img> 全曲無料・フリー音楽素材/魔王魂</a></li>
+										<li><a href="http://www.pds.ink/" target="_blank" class="button"><img width=32 height=32 src="https://i.loli.net/2018/03/10/5aa3402987980.png" onerror="nofind();"></img> 生存都市 | 热闹~百人同服游戏！</a></li>
+										<li><a href="https://saucenao.com/" target="_blank" class="button"><img width=32 height=32 src="https://saucenao.com/favicon.ico" onerror="nofind();"></img> SauceNAO 图片搜索引擎</a></li>
+										<li><a href="https://space.bilibili.com/6823116/album" target="_blank" class="button"><img width=32 height=32 src="https://i1.hdslb.com/bfs/face/af980d49205f4661f68ad2a09161c1da11d09483.jpg_32x32.jpg" onerror="nofind();"></img> 哔哩哔哩 壁纸娘</a></li>
+										<li><a href="https://www.mrxiaom.top/games/susie_badtime/play.html" target="_blank" class="button"><img width=32 height=32 src="https://www.mrxiaom.top/icons/SusieBadTime.png" onerror="nofind();"></img> Susie的坏时光</a></li>
+										<li><a href="https://www.mrxiaom.top/games/mikutap/play.html" target="_blank" class="button"><img width=32 height=32 src="https://www.mrxiaom.top/icons/mikutap-icon.png" onerror="nofind();"></img> Mikutap</a></li>
+									
+									</ul>
+								</section>
+							</article>
+							
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; <a href="https://www.mrxiaom.top">bilibili_Xiao_M</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			$(document).ready(function (){
+				$('#loading').fadeOut();
+			});
+			var bvid = '-1';
+			function changeVideo(bv){
+				bvid=bv;
+				document.getElementById("videoplayer").src='https://player.bilibili.com/player.html?bvid='+bv+'&page=1';
+				document.getElementById("novideo").style = 'display: none;';
+			}
+			function openVideoPage(){
+				if(bvid!='-1'){
+					window.open("https://www.bilibili.com/video/"+bvid);
+				}
+				else{
+					alert("请先选中视频");
+				}
+			}
+			function foldContext(id){
+				var box = document.getElementById(id);
+				$("#"+id).slideToggle("slow");
+			}
+			$("#citystory-001").slideToggle("");
+			$("#citystory-002").slideToggle("");
+			$("#citystory-003").slideToggle("");
+			$("#citystory-004").slideToggle("");
+			</script>
+	</body>
+</html>
